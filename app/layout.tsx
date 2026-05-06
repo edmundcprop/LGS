@@ -7,8 +7,10 @@ import WhatsAppFab from "@/components/WhatsAppFab";
 import ConsentBanner from "@/components/ConsentBanner";
 import AnalyticsListeners from "@/components/AnalyticsListeners";
 import { site, absoluteUrl } from "@/lib/site";
+import { getGa4Id, getGtmId } from "@/lib/tracking";
 
-const GTM_ID = "GTM-K7G8ZKWJ";
+const GTM_ID = getGtmId();
+const GA4_ID = getGa4Id();
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -88,10 +90,18 @@ export default function RootLayout({
     <html lang="en-MY">
       <head>
         <Script id="consent-default" strategy="beforeInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',true);`}
         </Script>
         <Script id="gtm-init" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
+        </Script>
+        <Script
+          id="ga4-loader"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`gtag('js', new Date());gtag('config', '${GA4_ID}');`}
         </Script>
         <script
           dangerouslySetInnerHTML={{

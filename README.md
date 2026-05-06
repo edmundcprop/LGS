@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000.
+Open http://localhost:4000.
 
 ## Build static site
 
@@ -35,3 +35,4 @@ Static output is generated in the `out/` folder — deploy to Netlify, Vercel, o
 - **Products:** `lib/products.ts`
 - **Brand colors:** `tailwind.config.ts` (`lg.red`, etc.)
 - **Images:** currently uses Unsplash placeholders — replace with LG official assets (drop into `public/images/` and update `lib/products.ts`)
+- **GTM container:** `NEXT_PUBLIC_GTM_ID` (see `docs/google-ads-setup.md`)

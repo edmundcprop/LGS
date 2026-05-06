@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { categories, products, type Product } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import { pushEvent } from "@/lib/analytics";
+import { buildGenerateLeadEvent } from "@/lib/tracking";
 
 type CartItem = {
   id: string;
@@ -249,12 +250,9 @@ function SubscribeForm() {
     const outrightValue = cart
       .filter((c) => c.tenure === "outright")
       .reduce((s, c) => s + (c.monthlyPrice ?? 0), 0);
-    pushEvent({
-      event: "generate_lead",
-      lead_method: "whatsapp",
-      currency: "MYR",
-      value_monthly: monthlyValue,
-      value_outright: outrightValue,
+    pushEvent(buildGenerateLeadEvent({
+      monthlyValue,
+      outrightValue,
       items: cart.map((c) => ({
         item_id: c.productSlug,
         item_name: c.productName,
@@ -263,9 +261,9 @@ function SubscribeForm() {
         care_tier: c.careTier,
         price: c.monthlyPrice ?? 0,
       })),
-      has_email: Boolean(form.email),
-      has_location: Boolean(form.location),
-    });
+      hasEmail: Boolean(form.email),
+      hasLocation: Boolean(form.location),
+    }));
     window.open(whatsappHref, "_blank", "noopener,noreferrer");
   };
 
