@@ -105,6 +105,16 @@ export default function Footer() {
                   <T en="Subscribe" ms="Langgan" />
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="hover:text-lg-red">
+                  <T en="Privacy Policy" ms="Dasar Privasi" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-lg-red">
+                  <T en="Terms of Use" ms="Terma Penggunaan" />
+                </Link>
+              </li>
               <li className="pt-2 text-lg-silver">{site.contact.email}</li>
               <li className="text-lg-silver">{site.contact.hours}</li>
             </ul>

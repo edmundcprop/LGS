@@ -29,6 +29,16 @@ export default function AnalyticsListeners() {
         return;
       }
 
+      if (href.startsWith("tel:")) {
+        pushEvent({
+          event: "phone_click",
+          link_url: href,
+          link_text: label,
+          link_location: anchor.getAttribute("aria-label") ?? "link",
+        });
+        return;
+      }
+
       if (href === "/enquire" || href.startsWith("/enquire?") || href.startsWith("/enquire#")) {
         pushEvent({
           event: "enquire_click",
