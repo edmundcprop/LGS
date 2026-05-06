@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { pushEvent } from "@/lib/analytics";
+import { fireWhatsAppConversion } from "@/lib/tracking";
 
 // Delegated click tracking for WhatsApp links and Enquire CTAs.
 // Mounted once in the root layout — fires on any descendant <a> click,
@@ -24,6 +25,7 @@ export default function AnalyticsListeners() {
           link_text: label,
           link_location: anchor.getAttribute("aria-label") ?? "link",
         });
+        fireWhatsAppConversion();
         return;
       }
 

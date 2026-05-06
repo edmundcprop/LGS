@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { categories, products, type Product } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import { pushEvent } from "@/lib/analytics";
-import { buildGenerateLeadEvent } from "@/lib/tracking";
+import { buildGenerateLeadEvent, fireWhatsAppConversion } from "@/lib/tracking";
 
 type CartItem = {
   id: string;
@@ -264,6 +264,7 @@ function SubscribeForm() {
       hasEmail: Boolean(form.email),
       hasLocation: Boolean(form.location),
     }));
+    fireWhatsAppConversion();
     window.open(whatsappHref, "_blank", "noopener,noreferrer");
   };
 

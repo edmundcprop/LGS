@@ -7,7 +7,7 @@ import WhatsAppFab from "@/components/WhatsAppFab";
 import ConsentBanner from "@/components/ConsentBanner";
 import AnalyticsListeners from "@/components/AnalyticsListeners";
 import { site, absoluteUrl } from "@/lib/site";
-import { getGa4Id, getGtmId } from "@/lib/tracking";
+import { getGa4Id, getGtmId, GOOGLE_ADS_ID } from "@/lib/tracking";
 
 const GTM_ID = getGtmId();
 const GA4_ID = getGa4Id();
@@ -101,7 +101,7 @@ export default function RootLayout({
           src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
         />
         <Script id="ga4-init" strategy="afterInteractive">
-          {`gtag('js', new Date());gtag('config', '${GA4_ID}');`}
+          {`gtag('js', new Date());gtag('config', '${GA4_ID}');gtag('config', '${GOOGLE_ADS_ID}');`}
         </Script>
         <script
           dangerouslySetInnerHTML={{
