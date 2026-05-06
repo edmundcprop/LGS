@@ -1,9 +1,57 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { whatsappLink } from "@/lib/site";
 
+const DEFAULT_MESSAGE = "Hi! I'd like to know more about LG Subscribe.";
+
+function buildProductMessage(
+  pathname: string,
+  heading: string,
+  url: string,
+): string | null {
+  // Product detail: /products/[category]/[slug]
+  if (/^\/products\/[^/]+\/[^/]+\/?$/.test(pathname)) {
+    if (heading) {
+      return `Hi! I'm interested in ${heading}. Could you share the latest plans and pricing?\n\nProduct: ${url}`;
+    }
+    return `Hi! I'd like to know more about this product.\n\nProduct: ${url}`;
+  }
+  // Category: /products/[category]
+  if (/^\/products\/[^/]+\/?$/.test(pathname)) {
+    if (heading) {
+      return `Hi! I'm interested in ${heading} plans. Could you share the latest options?\n\nPage: ${url}`;
+    }
+    return `Hi! I'd like to know more about this category.\n\nPage: ${url}`;
+  }
+  // All-products index: /products
+  if (pathname === "/products" || pathname === "/products/") {
+    return `Hi! I'd like to explore the LG Subscribe lineup.\n\nPage: ${url}`;
+  }
+  return null;
+}
+
 export default function WhatsAppFab() {
+  const pathname = usePathname() ?? "/";
+  const [message, setMessage] = useState(DEFAULT_MESSAGE);
+
+  useEffect(() => {
+    // requestAnimationFrame defers one frame so the destination page's
+    // <h1> is in the DOM after client-side navigation before we read it.
+    const id = requestAnimationFrame(() => {
+      const url = window.location.href;
+      const heading =
+        document.querySelector("h1")?.textContent?.trim() ?? "";
+      const productMsg = buildProductMessage(pathname, heading, url);
+      setMessage(productMsg ?? DEFAULT_MESSAGE);
+    });
+    return () => cancelAnimationFrame(id);
+  }, [pathname]);
+
   return (
     <a
-      href={whatsappLink("Hi! I'd like to know more about LG Subscribe.")}
+      href={whatsappLink(message)}
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp"
