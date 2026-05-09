@@ -39,15 +39,31 @@ function onNetlify(): boolean {
   return process.env.NETLIFY === "true";
 }
 
-export async function appendClick(entry: WhatsAppClickEntry): Promise<void> {
+export async function appendClick(entry: WhatsAppClickEntry): Promise<{
+  wrote: boolean;
+  onNetlify: boolean;
+  key?: string;
+  readBack?: boolean;
+  error?: string;
+}> {
   if (!onNetlify()) {
     console.log("[whatsapp-log dev]", entry);
-    return;
+    return { wrote: false, onNetlify: false };
   }
-  const store = getStore(STORE);
-  const random = Math.random().toString(36).slice(2, 8);
-  const key = `${entry.ts}-${random}`;
-  await store.setJSON(key, entry);
+  try {
+    const store = getStore(STORE);
+    const random = Math.random().toString(36).slice(2, 8);
+    const key = `${entry.ts}-${random}`;
+    await store.setJSON(key, entry);
+    const back = await store.get(key, { type: "json" });
+    return { wrote: true, onNetlify: true, key, readBack: back !== null };
+  } catch (err) {
+    return {
+      wrote: false,
+      onNetlify: true,
+      error: err instanceof Error ? err.message : String(err),
+    };
+  }
 }
 
 export async function listRecent(limit = 100): Promise<WhatsAppClickEntry[]> {
