@@ -67,8 +67,8 @@ export async function POST(req: Request) {
     referer: referer.slice(0, 1000),
   };
 
-  const result = await appendClick(entry);
-  return NextResponse.json({ ok: true, debug: result });
+  await appendClick(entry);
+  return NextResponse.json({ ok: true });
 }
 
 export async function GET(req: Request) {
