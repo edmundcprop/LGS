@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { categories, products, type Product } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import { pushEvent } from "@/lib/analytics";
-import { buildGenerateLeadEvent, fireWhatsAppConversion } from "@/lib/tracking";
+import { buildGenerateLeadEvent, fireWhatsAppConversion, logWhatsAppClick } from "@/lib/tracking";
 
 type CartItem = {
   id: string;
@@ -265,6 +265,31 @@ function SubscribeForm() {
       hasLocation: Boolean(form.location),
     }));
     fireWhatsAppConversion();
+    let prefilled = "";
+    try {
+      prefilled = new URL(whatsappHref).searchParams.get("text") ?? "";
+    } catch {
+      prefilled = "";
+    }
+    logWhatsAppClick({
+      source: "form",
+      message: prefilled,
+      email: form.email || undefined,
+      name: form.name || undefined,
+      phone: form.phone || undefined,
+      location: form.location || undefined,
+      cart: cart.map((c) => ({
+        id: c.productSlug,
+        name: c.productName,
+        category: c.productCategory,
+        tenure: c.tenure,
+        careTier: c.careTier,
+        price: c.monthlyPrice ?? 0,
+      })),
+      value: monthlyValue + outrightValue,
+      hasEmail: Boolean(form.email),
+      hasLocation: Boolean(form.location),
+    });
     window.open(whatsappHref, "_blank", "noopener,noreferrer");
   };
 
