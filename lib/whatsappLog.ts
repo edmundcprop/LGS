@@ -35,50 +35,64 @@ export type WhatsAppClickEntry = {
   gclid?: string;
 };
 
-function onNetlify(): boolean {
-  return process.env.NETLIFY === "true";
-}
-
-export async function appendClick(entry: WhatsAppClickEntry): Promise<{
+export type AppendResult = {
   wrote: boolean;
-  onNetlify: boolean;
   key?: string;
   readBack?: boolean;
   error?: string;
-}> {
-  if (!onNetlify()) {
-    console.log("[whatsapp-log dev]", entry);
-    return { wrote: false, onNetlify: false };
-  }
+};
+
+export async function appendClick(
+  entry: WhatsAppClickEntry,
+): Promise<AppendResult> {
+  // getStore throws synchronously if Blobs context is unavailable (local
+  // `next dev` without `netlify dev`). In production Functions/Next runtime
+  // the SDK auto-discovers credentials, so we don't need an env-var gate.
+  let store;
   try {
-    const store = getStore(STORE);
+    store = getStore(STORE);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.log("[whatsapp-log] Blobs unavailable, skipping write:", message);
+    return { wrote: false, error: message };
+  }
+
+  try {
     const random = Math.random().toString(36).slice(2, 8);
     const key = `${entry.ts}-${random}`;
     await store.setJSON(key, entry);
-    const back = await store.get(key, { type: "json" });
-    return { wrote: true, onNetlify: true, key, readBack: back !== null };
+    return { wrote: true, key };
   } catch (err) {
-    return {
-      wrote: false,
-      onNetlify: true,
-      error: err instanceof Error ? err.message : String(err),
-    };
+    const message = err instanceof Error ? err.message : String(err);
+    console.error("[whatsapp-log] setJSON failed:", message);
+    return { wrote: false, error: message };
   }
 }
 
 export async function listRecent(limit = 100): Promise<WhatsAppClickEntry[]> {
-  if (!onNetlify()) return [];
-  const store = getStore(STORE);
-  const { blobs } = await store.list();
-  // Keys begin with ISO timestamps so lexicographic desc = newest first.
-  const recent = blobs
-    .sort((a, b) => b.key.localeCompare(a.key))
-    .slice(0, limit);
-  const entries = await Promise.all(
-    recent.map(
-      async (b) =>
-        (await store.get(b.key, { type: "json" })) as WhatsAppClickEntry | null,
-    ),
-  );
-  return entries.filter((e): e is WhatsAppClickEntry => Boolean(e));
+  let store;
+  try {
+    store = getStore(STORE);
+  } catch {
+    return [];
+  }
+
+  try {
+    const { blobs } = await store.list();
+    const recent = blobs
+      .sort((a, b) => b.key.localeCompare(a.key))
+      .slice(0, limit);
+    const entries = await Promise.all(
+      recent.map(
+        async (b) =>
+          (await store.get(b.key, { type: "json" })) as
+            | WhatsAppClickEntry
+            | null,
+      ),
+    );
+    return entries.filter((e): e is WhatsAppClickEntry => Boolean(e));
+  } catch (err) {
+    console.error("[whatsapp-log] list failed:", err);
+    return [];
+  }
 }
