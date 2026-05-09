@@ -19,6 +19,15 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // /api/whatsapp-log: public POST (visitor click logging via sendBeacon).
+  // The route handler enforces auth on GET (admin viewer) itself.
+  if (
+    pathname === "/api/whatsapp-log" ||
+    pathname === "/api/whatsapp-log/"
+  ) {
+    return NextResponse.next();
+  }
+
   const token = request.cookies.get("cms_token")?.value;
 
   // Protect /admin/* — redirect to login if no cookie
