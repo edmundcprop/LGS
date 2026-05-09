@@ -111,7 +111,7 @@ export default function WhatsAppLogPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch("/api/whatsapp-log?limit=500")
+    fetch("/api/whatsapp-log/?limit=500")
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json();

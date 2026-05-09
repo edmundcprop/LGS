@@ -82,7 +82,10 @@ export function logWhatsAppClick(payload: WhatsAppLogPayload): void {
       new URLSearchParams(window.location.search).get("gclid") ?? undefined,
   };
   const body = JSON.stringify(enriched);
-  const url = "/api/whatsapp-log";
+  // Trailing slash matches next.config.mjs trailingSlash:true to avoid the
+  // 308 redirect on POST (some browsers/sendBeacon implementations drop the
+  // body on redirect).
+  const url = "/api/whatsapp-log/";
 
   try {
     if (typeof navigator.sendBeacon === "function") {
