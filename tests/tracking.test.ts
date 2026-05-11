@@ -3,7 +3,9 @@ import test from "node:test";
 
 import {
   DEFAULT_GTM_ID,
+  LG_SUBSCRIBE_WHATSAPP_EVENT,
   buildGenerateLeadEvent,
+  fireWhatsAppConversion,
   getGtmId,
 } from "../lib/tracking.ts";
 
@@ -57,4 +59,40 @@ test("buildGenerateLeadEvent includes a total value for Google Ads conversion ta
     has_email: true,
     has_location: false,
   });
+});
+
+test("fireWhatsAppConversion sends the lgsubscribe WhatsApp event", () => {
+  const originalWindow = globalThis.window;
+  const calls: unknown[][] = [];
+
+  Object.defineProperty(globalThis, "window", {
+    configurable: true,
+    value: {
+      gtag: (...args: unknown[]) => calls.push(args),
+    },
+  });
+
+  try {
+    fireWhatsAppConversion();
+  } finally {
+    if (originalWindow === undefined) {
+      Reflect.deleteProperty(globalThis, "window");
+    } else {
+      Object.defineProperty(globalThis, "window", {
+        configurable: true,
+        value: originalWindow,
+      });
+    }
+  }
+
+  assert.deepEqual(calls, [
+    [
+      "event",
+      LG_SUBSCRIBE_WHATSAPP_EVENT,
+      {
+        event_category: "lead",
+        event_label: "whatsapp",
+      },
+    ],
+  ]);
 });

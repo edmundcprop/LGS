@@ -1,7 +1,7 @@
 export const DEFAULT_GTM_ID = "GTM-K7G8ZKWJ";
 export const DEFAULT_GA4_ID = "G-0Y7P3Y7VMW";
 export const GOOGLE_ADS_ID = "AW-11230310270";
-export const WHATSAPP_CONVERSION_LABEL = "AW-11230310270/sTKZCNrD6qUZEP7eg-sp";
+export const LG_SUBSCRIBE_WHATSAPP_EVENT = "whatsapp_lgsubscribe_click";
 
 declare global {
   interface Window {
@@ -42,7 +42,10 @@ export function getGa4Id(env: TrackingEnv = process.env): string {
 
 export function fireWhatsAppConversion(): void {
   if (typeof window === "undefined" || typeof window.gtag !== "function") return;
-  window.gtag("event", "conversion", { send_to: WHATSAPP_CONVERSION_LABEL });
+  window.gtag("event", LG_SUBSCRIBE_WHATSAPP_EVENT, {
+    event_category: "lead",
+    event_label: "whatsapp",
+  });
 }
 
 type WhatsAppLogPayload = {
