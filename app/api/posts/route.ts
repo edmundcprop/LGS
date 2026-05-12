@@ -29,8 +29,13 @@ export async function POST(req: Request) {
         .replace(/^-|-$/g, "");
     }
 
-    posts.push(body);
-    await writeData("posts", posts);
+    // Upsert by slug. The blob write path has a read-modify-write window
+    // that occasionally permits the same client retry to land twice;
+    // making POST idempotent prevents the duplicates from accumulating
+    // and dedupes any historical duplicates as a side-effect.
+    const deduped = posts.filter((p) => p.slug !== body.slug);
+    deduped.push(body);
+    await writeData("posts", deduped);
 
     return NextResponse.json(body, { status: 201 });
   } catch {
