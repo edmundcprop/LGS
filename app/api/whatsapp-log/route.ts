@@ -5,7 +5,7 @@ import {
   type WhatsAppCartItem,
   type WhatsAppClickEntry,
 } from "@/lib/whatsappLog";
-import { getTokenFromCookies, verifyToken } from "@/lib/auth";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -72,14 +72,8 @@ export async function POST(req: Request) {
 }
 
 export async function GET(req: Request) {
-  const token = getTokenFromCookies(req);
-  if (!token) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
-  const payload = verifyToken(token);
-  if (!payload) {
-    return NextResponse.json({ error: "Invalid token" }, { status: 401 });
-  }
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
 
   const url = new URL(req.url);
   const limitParam = parseInt(url.searchParams.get("limit") ?? "200", 10);

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { readData, writeData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +34,8 @@ type Post = {
  * ## Markdown body here...
  */
 export async function POST(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const formData = await req.formData();
     const file = formData.get("file") as File | null;

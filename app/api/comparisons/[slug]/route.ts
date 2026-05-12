@@ -1,14 +1,15 @@
 import { NextResponse } from "next/server";
 import { readData, writeData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
 type Comparison = { slug: string } & Record<string, unknown>;
 
-export async function GET(
-  _req: Request,
-  { params }: { params: Promise<{ slug: string }> }
-) {
+export async function GET(req: Request,
+  { params }: { params: Promise<{ slug: string }> }) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const comparisons = await readData<Comparison[]>("comparisons");
@@ -30,10 +31,10 @@ export async function GET(
   }
 }
 
-export async function PUT(
-  req: Request,
-  { params }: { params: Promise<{ slug: string }> }
-) {
+export async function PUT(req: Request,
+  { params }: { params: Promise<{ slug: string }> }) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const body = (await req.json()) as Partial<Comparison>;
@@ -59,10 +60,10 @@ export async function PUT(
   }
 }
 
-export async function DELETE(
-  _req: Request,
-  { params }: { params: Promise<{ slug: string }> }
-) {
+export async function DELETE(req: Request,
+  { params }: { params: Promise<{ slug: string }> }) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const comparisons = await readData<Comparison[]>("comparisons");

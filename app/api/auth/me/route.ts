@@ -1,12 +1,15 @@
 import { NextResponse } from "next/server";
 import { getTokenFromCookies, verifyToken } from "@/lib/auth";
 import { readData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
 type User = { id: string; username: string; password: string; role: string };
 
 export async function GET(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const token = getTokenFromCookies(req);
     if (!token) {

@@ -1,11 +1,14 @@
 import { NextResponse } from "next/server";
 import { readData, writeData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
 type Product = { slug: string; name?: string } & Record<string, unknown>;
 
-export async function GET() {
+export async function GET(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const data = await readData<Product[]>("products");
     return NextResponse.json(data);
@@ -18,6 +21,8 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const body = (await req.json()) as Product;
     const products = await readData<Product[]>("products");

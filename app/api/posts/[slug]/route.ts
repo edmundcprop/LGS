@@ -1,14 +1,17 @@
 import { NextResponse } from "next/server";
 import { readData, writeData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
 type Post = { slug: string } & Record<string, unknown>;
 
 export async function GET(
-  _req: Request,
+  req: Request,
   { params }: { params: Promise<{ slug: string }> }
 ) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const posts = await readData<Post[]>("posts");
@@ -31,6 +34,8 @@ export async function PUT(
   req: Request,
   { params }: { params: Promise<{ slug: string }> }
 ) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const body = (await req.json()) as Partial<Post>;
@@ -54,9 +59,11 @@ export async function PUT(
 }
 
 export async function DELETE(
-  _req: Request,
+  req: Request,
   { params }: { params: Promise<{ slug: string }> }
 ) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { slug } = await params;
     const posts = await readData<Post[]>("posts");

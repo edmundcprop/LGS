@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import path from "path";
 import { saveUpload } from "@/lib/uploads";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +16,8 @@ const ALLOWED_TYPES = [
 const ALLOWED_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 
 export async function POST(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const formData = await req.formData();
     const file = formData.get("file") as File | null;

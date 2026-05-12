@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { hashPassword } from "@/lib/auth";
 import { readData, writeData } from "@/lib/store";
+import { requireAuth } from "@/lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +12,9 @@ type User = {
   role: string;
 };
 
-export async function GET() {
+export async function GET(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const users = await readData<User[]>("users");
     const safe = users.map(({ password: _password, ...rest }) => rest);
@@ -25,6 +28,8 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const body = (await req.json()) as Partial<User>;
     const users = await readData<User[]>("users");
@@ -65,6 +70,8 @@ export async function POST(req: Request) {
 }
 
 export async function DELETE(req: Request) {
+  const blocked = requireAuth(req);
+  if (blocked) return blocked;
   try {
     const { id } = (await req.json()) as { id?: string };
 
