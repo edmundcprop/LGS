@@ -14,9 +14,21 @@ export type StoreKey =
   | "site"
   | "users";
 
-function onNetlify(): boolean {
-  // Netlify sets NETLIFY=true on builds and in the Functions runtime.
-  return process.env.NETLIFY === "true";
+type BlobStore = ReturnType<typeof getStore>;
+
+// getStore throws synchronously if Blobs context is unavailable (local
+// `next dev` without `netlify dev`). In Netlify Functions / Next runtime
+// the SDK auto-discovers credentials, so a successful call here is the
+// reliable signal that we are running on Netlify. The previous
+// `process.env.NETLIFY === "true"` gate was unreliable in the Next.js
+// adapter runtime and caused writes to fall back to `fs.writeFileSync`
+// on the read-only Lambda filesystem, returning 500 for every admin write.
+function tryGetStore(): BlobStore | null {
+  try {
+    return getStore(STORE_NAME);
+  } catch {
+    return null;
+  }
 }
 
 function localPath(key: StoreKey): string {
@@ -32,9 +44,9 @@ function writeLocal<T>(key: StoreKey, data: T): void {
 }
 
 export async function readData<T>(key: StoreKey): Promise<T> {
-  if (!onNetlify()) return readLocal<T>(key);
+  const store = tryGetStore();
+  if (!store) return readLocal<T>(key);
 
-  const store = getStore(STORE_NAME);
   const existing = (await store.get(key, { type: "json" })) as T | null;
   if (existing !== null && existing !== undefined) return existing;
 
@@ -45,12 +57,12 @@ export async function readData<T>(key: StoreKey): Promise<T> {
 }
 
 export async function writeData<T>(key: StoreKey, data: T): Promise<void> {
-  if (!onNetlify()) {
+  const store = tryGetStore();
+  if (!store) {
     writeLocal<T>(key, data);
     return;
   }
 
-  const store = getStore(STORE_NAME);
   await store.setJSON(key, data);
   // Await the rebuild trigger so the request doesn't finish before the
   // POST to the build hook completes. Netlify functions can terminate
