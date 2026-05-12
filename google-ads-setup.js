@@ -297,12 +297,124 @@ function ensureCampaigns(campaigns, label) {
 function ensureStructure(campaigns, label) {
   campaigns.forEach(function(spec) {
     const campaign = waitForCampaign(spec.name);
-    campaign.pause();
+    Logger.log('====================================================');
+    Logger.log('Processing campaign: ' + spec.name);
+    Logger.log('====================================================');
     tryApplyLabel(campaign, label);
+
+    // Pause ad groups whose names do NOT match our target name.
+    // (AdGroup.remove() isn't exposed in Google Ads Scripts; pause()
+    // is the supported way to neutralize them.) Catches: Google's
+    // auto-created "Ad group 1" placeholder, plus anything stale
+    // from previous broken runs.
+    let pausedAdGroups = 0;
+    const allAdGroups = campaign.adGroups().get();
+    while (allAdGroups.hasNext()) {
+      const ag = allAdGroups.next();
+      if (ag.getName() !== spec.adGroup) {
+        if (!ag.isPaused()) {
+          Logger.log('  Pausing stale ad group: "' + ag.getName() + '"');
+          ag.pause();
+          pausedAdGroups++;
+        } else {
+          Logger.log('  Stale ad group already paused: "' + ag.getName() + '"');
+        }
+      }
+    }
+    if (pausedAdGroups > 0) {
+      Logger.log('  Paused ' + pausedAdGroups + ' stale ad group(s)');
+    }
+
+    // Ensure the correctly-named ad group exists and is enabled.
     const adGroup = ensureAdGroup(campaign, spec.adGroup, label);
-    ensureKeywords(adGroup, spec.keywords, spec.finalUrl);
-    ensureResponsiveSearchAd(adGroup, spec);
+    if (adGroup.isPaused()) {
+      adGroup.enable();
+      Logger.log('  Enabled ad group: ' + spec.adGroup);
+    }
+
+    addKeywordsVerbose(adGroup, spec.keywords);
+    rebuildResponsiveSearchAd(adGroup, spec);
   });
+}
+
+function addKeywordsVerbose(adGroup, keywords) {
+  const existing = {};
+  const iter = adGroup.keywords().get();
+  while (iter.hasNext()) {
+    const k = iter.next();
+    existing[String(k.getText()).toLowerCase()] = k;
+  }
+  let added = 0, kept = 0, failed = 0;
+  keywords.forEach(function(text) {
+    const key = String(text).toLowerCase();
+    if (existing[key]) {
+      // Make sure pre-existing keywords are not paused.
+      if (existing[key].isPaused()) {
+        existing[key].enable();
+      }
+      kept++;
+      return;
+    }
+    // No finalUrl override — RSA's finalUrl applies. Removing this
+    // override eliminates a silent failure mode where keyword-level
+    // URLs get rejected by validation.
+    const op = adGroup.newKeywordBuilder().withText(text).build();
+    if (op.isSuccessful()) {
+      added++;
+    } else {
+      failed++;
+      Logger.log('  KEYWORD FAILED: "' + text + '" — ' + op.getErrors().join('; '));
+    }
+  });
+  Logger.log('  Keywords: ' + added + ' added, ' + kept + ' already enabled, ' + failed + ' failed');
+}
+
+function rebuildResponsiveSearchAd(adGroup, spec) {
+  // Inspect existing ads. If a non-paused RSA with the right finalUrl
+  // already exists, keep it (don't churn). Otherwise pause everything
+  // and build a fresh RSA. Ad.remove() isn't reliably exposed in Google
+  // Ads Scripts, so we pause instead.
+  let pausedAds = 0;
+  let keptHealthyAd = false;
+  const adIter = adGroup.ads().get();
+  while (adIter.hasNext()) {
+    const ad = adIter.next();
+    const isRsa = typeof ad.asType === 'function' &&
+      ad.asType().responsiveSearchAd && ad.getType &&
+      String(ad.getType()).indexOf('RESPONSIVE_SEARCH_AD') >= 0;
+    const sameUrl = (function() {
+      try { return ad.urls().getFinalUrl() === spec.finalUrl; }
+      catch (e) { return false; }
+    })();
+    if (isRsa && sameUrl && !ad.isPaused() && !keptHealthyAd) {
+      // Keep one healthy RSA; pause everything else.
+      keptHealthyAd = true;
+      Logger.log('  Kept existing healthy RSA in ad group');
+      continue;
+    }
+    if (!ad.isPaused()) {
+      ad.pause();
+      pausedAds++;
+    }
+  }
+  if (pausedAds > 0) {
+    Logger.log('  Paused ' + pausedAds + ' existing ad(s) in ad group');
+  }
+  if (keptHealthyAd) {
+    return;
+  }
+  const op = adGroup.newAd().responsiveSearchAdBuilder()
+    .withFinalUrl(spec.finalUrl)
+    .withHeadlines(spec.headlines)
+    .withDescriptions(spec.descriptions)
+    .build();
+  if (op.isSuccessful()) {
+    Logger.log('  Created fresh RSA: ' + spec.headlines.length + ' headlines / ' +
+      spec.descriptions.length + ' descriptions, finalUrl=' + spec.finalUrl);
+  } else {
+    throw new Error('RSA creation failed for ' + spec.name + ': ' +
+      op.getErrors().join('; '));
+  }
 }
 
 function ensureAdGroup(campaign, adGroupName, label) {
@@ -324,39 +436,6 @@ function ensureAdGroup(campaign, adGroupName, label) {
   const adGroup = operation.getResult();
   tryApplyLabel(adGroup, label);
   return adGroup;
-}
-
-function ensureKeywords(adGroup, keywords, finalUrl) {
-  const existing = {};
-  const iterator = adGroup.keywords().get();
-  while (iterator.hasNext()) {
-    existing[String(iterator.next().getText()).toLowerCase()] = true;
-  }
-  keywords.forEach(function(text) {
-    if (existing[String(text).toLowerCase()]) return;
-    const operation = adGroup.newKeywordBuilder()
-      .withText(text)
-      .withFinalUrl(finalUrl)
-      .build();
-    if (!operation.isSuccessful()) {
-      Logger.log('Keyword error for ' + text + ': ' + operation.getErrors());
-    }
-  });
-}
-
-function ensureResponsiveSearchAd(adGroup, spec) {
-  if (adGroup.ads().get().hasNext()) {
-    Logger.log('Ad exists in: ' + spec.name);
-    return;
-  }
-  const operation = adGroup.newAd().responsiveSearchAdBuilder()
-    .withFinalUrl(spec.finalUrl)
-    .withHeadlines(spec.headlines)
-    .withDescriptions(spec.descriptions)
-    .build();
-  if (!operation.isSuccessful()) {
-    throw new Error('Could not create RSA for ' + spec.name + ': ' + operation.getErrors());
-  }
 }
 
 function ensureNegativeList(listName, negatives, campaigns) {
