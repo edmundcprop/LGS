@@ -13,3 +13,10 @@ out
 deploy-*.zip
 deno.lock
 tsconfig.tsbuildinfo
+
+# Claude Code local config (machine-specific tool permission allowlist)
+.claude/settings.local.json
+
+# Office app lockfiles (LibreOffice, Word, Excel temp lock indicators)
+.~lock.*#
+~$*
