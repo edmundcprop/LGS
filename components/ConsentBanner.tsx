@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { fireGa4PageView } from "@/lib/tracking";
 
 const STORAGE_KEY = "lg-consent-v1";
 
@@ -73,6 +74,7 @@ export default function ConsentBanner() {
 
   const accept = () => {
     applyConsent("granted");
+    fireGa4PageView();
     setVisible(false);
   };
 

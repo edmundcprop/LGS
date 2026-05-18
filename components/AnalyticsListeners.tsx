@@ -1,13 +1,34 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { pushEvent } from "@/lib/analytics";
-import { fireWhatsAppConversion, logWhatsAppClick } from "@/lib/tracking";
+import {
+  fireGa4PageView,
+  fireWhatsAppConversion,
+  logWhatsAppClick,
+} from "@/lib/tracking";
 
 // Delegated click tracking for WhatsApp links and Enquire CTAs.
 // Mounted once in the root layout — fires on any descendant <a> click,
 // including links rendered in server components.
 export default function AnalyticsListeners() {
+  const pathname = usePathname();
+  const hasMounted = useRef(false);
+
+  useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+
+    fireGa4PageView({
+      pagePath: `${pathname}${window.location.search}`,
+      pageLocation: window.location.href,
+      pageTitle: document.title,
+    });
+  }, [pathname]);
+
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;

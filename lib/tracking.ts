@@ -48,6 +48,28 @@ export function fireWhatsAppConversion(): void {
   });
 }
 
+type PageViewInput = {
+  pagePath?: string;
+  pageLocation?: string;
+  pageTitle?: string;
+};
+
+export function fireGa4PageView(input: PageViewInput = {}): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+
+  const pageLocation = input.pageLocation ?? window.location.href;
+  const pagePath =
+    input.pagePath ?? `${window.location.pathname}${window.location.search}`;
+  const pageTitle = input.pageTitle ?? window.document.title;
+
+  window.gtag("event", "page_view", {
+    send_to: getGa4Id(),
+    page_location: pageLocation,
+    page_path: pagePath,
+    page_title: pageTitle,
+  });
+}
+
 type WhatsAppLogPayload = {
   source: "anchor" | "form" | string;
   pathname?: string;
