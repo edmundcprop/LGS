@@ -630,7 +630,8 @@
       {
         "monthly": 85,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 95,
@@ -770,7 +771,8 @@
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 100,
@@ -1054,7 +1056,8 @@
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 130,
@@ -1136,7 +1139,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "front-load-combo-15-8kg-f2515",
@@ -1194,7 +1198,8 @@
       {
         "monthly": 140,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 150,
@@ -1276,7 +1281,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "washtower-14-10",
@@ -1346,7 +1352,8 @@
       {
         "monthly": 210,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 220,
@@ -1428,7 +1435,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "objet-washtower-25-20",
@@ -1498,7 +1506,8 @@
       {
         "monthly": 280,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 290,
@@ -1580,7 +1589,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "493l-top-freezer-gn-f452",
