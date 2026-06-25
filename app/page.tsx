@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TrackedLink from "@/components/TrackedLink";
 import { categories, products } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
@@ -251,28 +252,38 @@ export default function HomePage() {
 
           <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/products/${c.slug}`}
-                className="group relative flex h-[380px] overflow-hidden rounded-[28px] bg-white transition-all duration-500 hover:-translate-y-1 hover:shadow-card-hover"
-              >
-                <img
-                  src={c.hero}
-                  alt={c.name}
-                  className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="relative mt-auto p-8 text-white">
-                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70">
-                    {c.short}
+                <TrackedLink
+                  key={c.slug}
+                  type="category"
+                  href={`/products/${c.slug}`}
+                  categoryName={c.name}
+                  categorySlug={c.slug}
+                  sourcePage="home"
+                  ctaLocation="home_category_grid"
+                  className="group relative flex h-[380px] overflow-hidden rounded-[28px] bg-white transition-all duration-500 hover:-translate-y-1 hover:shadow-card-hover"
+                >
+                  <img
+                    src={c.hero}
+                    alt={c.name}
+                    className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  {c.isNew && (
+                    <span className="absolute left-5 top-5 z-10 rounded-full bg-lg-red px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white">
+                      <T en="New" ms="Baharu" />
+                    </span>
+                  )}
+                  <div className="relative mt-auto p-8 text-white">
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70">
+                      {c.short}
+                    </div>
+                    <div className="mt-2 text-2xl font-semibold">{c.name}</div>
+                    <div className="mt-3 text-[13px] text-white/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      Explore →
+                    </div>
                   </div>
-                  <div className="mt-2 text-2xl font-semibold">{c.name}</div>
-                  <div className="mt-3 text-[13px] text-white/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    Explore →
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </TrackedLink>
+              ))}
           </div>
         </div>
       </section>
@@ -294,9 +305,15 @@ export default function HomePage() {
 
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((p) => (
-              <Link
+              <TrackedLink
                 key={p.slug}
+                type="product"
                 href={`/products/${p.category}/${p.slug}`}
+                productName={p.name}
+                modelNumber={p.model}
+                categorySlug={p.category}
+                ctaLocation="home_featured"
+                subscriptionPrice={p.price}
                 className="product-card group"
               >
                 <div className="aspect-[4/3] overflow-hidden bg-lg-cloud">
@@ -334,7 +351,7 @@ export default function HomePage() {
                     )}
                   </div>
                 </div>
-              </Link>
+              </TrackedLink>
             ))}
           </div>
         </div>

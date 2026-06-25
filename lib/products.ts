@@ -4,6 +4,7 @@ export type Category = {
   short: string;
   description: string;
   hero: string;
+  isNew?: boolean;
 };
 
 export type PricingTier = {

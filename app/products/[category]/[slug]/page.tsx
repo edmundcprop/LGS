@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ProductGallery from "@/components/ProductGallery";
 import JsonLd from "@/components/JsonLd";
 import T from "@/components/T";
+import ProductDetailViewTracker from "@/components/ProductDetailViewTracker";
 import {
   getCategory,
   getProduct,
@@ -116,6 +117,12 @@ export default async function ProductPage({
     <>
       <JsonLd data={productSchema(product, cat.name)} />
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
+      <ProductDetailViewTracker
+        productName={product.name}
+        modelNumber={product.model}
+        categorySlug={product.category}
+        subscriptionPrice={product.price}
+      />
       {product.faqs && product.faqs.length > 0 && (
         <JsonLd data={faqSchema(product.faqs)} />
       )}

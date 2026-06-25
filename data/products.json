@@ -123,8 +123,7 @@
       {
         "monthly": 560,
         "termMonths": 60,
-        "planName": "5-Year Subscription",
-        "note": "Free delivery, installation and care service included"
+        "planName": "5 Years Self-Service"
       }
     ],
     "whatsInBox": [
@@ -206,7 +205,8 @@
         "a": "The TV uses a 400 x 400 mm VESA pattern and weighs 31.4 kg without the stand. Wall-mount installation is arranged through the dealer — confirm what's bundled with your plan."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "qned87-75",
@@ -214,8 +214,8 @@
     "name": "75\" LG QNED evo AI TV QNED87 4K (2025)",
     "model": "75QNED87ASA",
     "tagline": "75-inch QNED evo with α8 AI Processor Gen2, 120Hz native panel and webOS 25.",
-    "price": 200,
-    "term": 60,
+    "price": null,
+    "term": null,
     "image": "/uploads/products/qned87-75/main.avif",
     "gallery": [
       "/uploads/products/qned87-75/gallery-1.avif",
@@ -296,14 +296,6 @@
         "value": "Magic Remote MR25"
       }
     ],
-    "pricing": [
-      {
-        "monthly": 200,
-        "termMonths": 60,
-        "planName": "5-Year LG Subscribe",
-        "note": "Includes warranty coverage for the full term"
-      }
-    ],
     "heroDescription": "LG's 75-inch QNED87 evo AI TV combines a large-format 4K QNED panel with α8 AI picture and sound processing. Native 120 Hz, VRR up to 144 Hz and full DCI-P3 colour volume make it a strong fit for both cinema and gaming. Through LG Subscribe you bring it home on a monthly plan instead of paying upfront.",
     "sections": [
       {
@@ -382,7 +374,8 @@
         "a": "The α8 AI Processor 4K Gen2, which handles picture and sound tuning plus AI upscaling."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "nano83-75",
@@ -500,8 +493,7 @@
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "Subscribe 5-Year Plan",
-        "note": "Delivery, installation, maintenance and 5-year warranty included"
+        "planName": "5 Years Self-Service"
       }
     ],
     "whatsInBox": [
@@ -583,7 +575,8 @@
         "a": "Standard installation covers table-top setup. Wall mounting with a VESA-compatible bracket can be arranged as an add-on service for an additional cost."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "top-load-17kg-tv2517",
@@ -591,7 +584,7 @@
     "name": "LG 17kg Top Load Washer with AI Direct Drive",
     "model": "TV2517DV3B",
     "tagline": "17 kg top loader with AI Wash, TurboDrum six-motion cleaning and a 10-year motor warranty.",
-    "price": 75,
+    "price": 85,
     "term": 60,
     "image": "/uploads/products/top-load-17kg-tv2517/main.png",
     "gallery": [
@@ -635,16 +628,14 @@
     ],
     "pricing": [
       {
-        "monthly": 75,
-        "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
-      },
-      {
         "monthly": 85,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Combined Maintenance"
+      },
+      {
+        "monthly": 95,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A large 17 kg top loader built around an Inverter Direct Drive motor and TurboDrum six-motion system. AI Wash reads each load and dials in the right motion, giving fabrics more protection without shrinking capacity. The lint filter and tub layout have been reworked for cleaner rinses.",
@@ -720,7 +711,8 @@
         "a": "The unit, delivery, installation and 5 years of either Combined Maintenance or Regular Visit service."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "front-load-10-5kg-fv1450s2w",
@@ -778,14 +770,12 @@
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The FV1450S2W is a 10.5 kg front load washer that pairs AI Direct Drive with TurboWash 360 and Steam+. Loads finish in about 39 minutes, steam tackles allergens and wrinkles, and the unit can stack with the TWINWash Mini if you want a second small drum for delicates.",
@@ -861,7 +851,8 @@
         "a": "It's compatible with LG's TWINWash Mini pedestal washer and can be stacked under a matching LG dryer."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "dual-heat-pump-dryer-vd-h9066",
@@ -911,14 +902,12 @@
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A ventless 9 kg tumble dryer built around LG's Dual Inverter Heat Pump. The lower drying temperature is gentler on fabrics than conventional heaters and uses less electricity. Allergy Care, Auto Cleaning Condenser and Smart Pairing with compatible LG washers round out the feature set.",
@@ -993,7 +982,8 @@
         "a": "The appliance, installation and 5 years of either Combined Maintenance or Regular Visit service."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "front-load-20kg-f2520s",
@@ -1063,14 +1053,12 @@
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "This 20 kg front loader is built for families who want to clear a week's laundry in one or two runs. AI Direct Drive picks the right motion for each load while TurboWash 360 trims wash time. A matte black finish with tinted tempered glass door keeps the design clean and modern.",
@@ -1146,7 +1134,8 @@
         "a": "The appliance, installation and 5 years of either Combined Maintenance or Regular Visit service."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "front-load-combo-15-8kg-f2515",
@@ -1204,14 +1193,12 @@
       {
         "monthly": 140,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Service visit roughly every 12 months"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 150,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "This single-drum combo washes up to 15 kg and dries up to 8 kg without needing a separate tumble dryer. At 645 mm deep it fits into tighter laundry areas while still holding a larger drum. AI Direct Drive and TurboWash 360 make cycles faster and gentler, and Steam+ tackles allergens.",
@@ -1287,7 +1274,8 @@
         "a": "The appliance, installation and 5 years of either Combined Maintenance or Regular Visit service."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "washtower-14-10",
@@ -1357,14 +1345,12 @@
       {
         "monthly": 210,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 220,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The 14/10 kg WashTower stacks a 14 kg front load washer and a 10 kg heat-pump dryer into one integrated body. A centre-mounted control panel means you never reach over the dryer to load the washer, and AI Direct Drive picks motions that match the fabric. The ventless heat-pump dryer is gentler on clothes than traditional drying.",
@@ -1440,7 +1426,8 @@
         "a": "The appliance, installation and either Combined Maintenance or Regular Visit servicing across the 5-year term."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "objet-washtower-25-20",
@@ -1510,14 +1497,12 @@
       {
         "monthly": 280,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance",
-        "note": "Bundled maintenance included"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 290,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The Objet WashTower pairs a 25 kg front load washer and 20 kg dryer inside a single floor-to-ceiling tower. A shared Centre Control panel runs both machines while AI Direct Drive and TurboWash 360 deliver fast, gentle cleaning. The Objet Collection finish is built to blend in as furniture rather than stand out as an appliance.",
@@ -1593,7 +1578,8 @@
         "a": "The Objet Collection finish is designed to blend into the room as furniture, rather than look like a traditional white appliance."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "493l-top-freezer-gn-f452",
@@ -1667,8 +1653,7 @@
       {
         "monthly": 80,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe",
-        "note": "No credit card required at sign-up"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 493 L top freezer refrigerator in Essence Matte Black with an external water dispenser, auto ice maker and Smart Inverter Compressor. Connects to LG ThinQ for remote temperature control and Smart Diagnosis.",
@@ -1743,7 +1728,8 @@
         "a": "Yes. It connects over Wi-Fi for control, alerts and Smart Diagnosis."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "635l-side-by-side-matte-gc-l257",
@@ -1805,14 +1791,7 @@
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5-Year Subscribe (24-month visits)",
-        "note": "Service visit every 24 months"
-      },
-      {
-        "monthly": 140,
-        "termMonths": 60,
-        "planName": "5-Year Subscribe (12-month visits)",
-        "note": "Service visit every 12 months"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 635 litre side-by-side refrigerator in matte black with an ice and water dispenser, auto ice maker and LG's Smart Inverter Compressor. Available on two subscription tiers that differ by service-visit frequency.",
@@ -1886,7 +1865,8 @@
         "a": "Matte Black."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "635l-side-by-side-doorindoor-gc-j257",
@@ -1895,7 +1875,7 @@
     "model": "GC-J257SQNW",
     "tagline": "635 L side-by-side in matte black with Door-in-Door, Linear Cooling and UVnano water dispenser.",
     "price": 130,
-    "term": 84,
+    "term": 60,
     "image": "/uploads/products/635l-side-by-side-doorindoor-gc-j257/main.avif",
     "gallery": [
       "/uploads/products/635l-side-by-side-doorindoor-gc-j257/gallery-1.avif",
@@ -1943,15 +1923,8 @@
     "pricing": [
       {
         "monthly": 130,
-        "termMonths": 84,
-        "planName": "7-Year LG Subscribe",
-        "note": "Lower monthly rate over a longer term"
-      },
-      {
-        "monthly": 150,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe",
-        "note": "Shorter term subscription"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 635 L side-by-side refrigerator in matte black with Door-in-Door, Linear Cooling and a UVnano-equipped water dispenser. Offered on either a 5-year or 7-year LG Subscribe plan.",
@@ -2026,7 +1999,8 @@
         "a": "Ten years of parts coverage on the Smart Inverter Compressor."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "665l-french-door-gc-b24",
@@ -2084,8 +2058,7 @@
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe",
-        "note": "No credit card required at sign-up"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 665 L French door fridge in matte black with a flat pocket-handle front and a black glass InstaView panel. Runs on an Inverter Linear Compressor with a 10-year parts warranty and connects to LG ThinQ.",
@@ -2159,7 +2132,8 @@
         "a": "Yes. It supports Wi-Fi control, notifications and diagnostics."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "508l-instaview-french-matte",
@@ -2233,7 +2207,7 @@
       {
         "monthly": 160,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 508 L French door refrigerator in Essence Matte Black with a black glass InstaView panel, UVnano dispenser and a Smart Inverter Compressor. Built for modern kitchens with a flat door and pocket handle design.",
@@ -2307,7 +2281,8 @@
         "a": "Yes. It connects to the LG ThinQ app over Wi-Fi."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "612l-instaview-white",
@@ -2377,7 +2352,7 @@
       {
         "monthly": 180,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 612 L French door refrigerator in Essence White glass with InstaView, Linear Cooling and Door Cooling+. A non-plumbed auto ice maker and LG ThinQ Wi-Fi round out the convenience features.",
@@ -2451,7 +2426,8 @@
         "a": "Ten years of parts warranty on the Smart Inverter Compressor."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "601l-instaview-beige",
@@ -2533,7 +2509,7 @@
       {
         "monthly": 290,
         "termMonths": 60,
-        "planName": "5-Year LG Subscribe"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 601 L French door refrigerator with tinted InstaView, Craft Ice and a UVnano-equipped water dispenser. Built around a Smart Inverter Linear Compressor and paired with LG ThinQ for remote control and alerts.",
@@ -2608,7 +2584,8 @@
         "a": "Yes. It connects over Wi-Fi to the LG ThinQ app for temperature, diagnostics and alerts."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "quadwash-prime-silver",
@@ -2710,8 +2687,7 @@
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled technician care throughout the term"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG DFC533FV is a 14-place freestanding dishwasher finished in Prime Silver. It combines TrueSteam hygiene with QuadWash four-arm spraying to tackle heavy loads, and pairs with the LG ThinQ app for remote cycle tracking and Smart Diagnosis.",
@@ -2787,7 +2763,8 @@
         "a": "600 mm wide × 850 mm tall × 600 mm deep. The unit weighs 47 kg."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "quadwash-matte-black",
@@ -2885,8 +2862,7 @@
       {
         "monthly": 150,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "No credit card required at sign-up"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG DFC335HM is a 14-place freestanding dishwasher in a sleek matte-black finish. It uses TrueSteam hygiene and QuadWash four-arm spraying for thorough cleaning, and connects to LG ThinQ for remote monitoring and cycle control.",
@@ -2962,7 +2938,8 @@
         "a": "Auto, Intensive, Refresh, Turbo, Express and Rinse, with extras like Steam, High Temperature and Extra Dry."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "puricare-360-hit",
@@ -3061,13 +3038,22 @@
       {
         "monthly": 50,
         "termMonths": 84,
-        "planName": "7-Year Subscription",
-        "note": "Lowest monthly rate in the air purifier line-up"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 70,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 80,
         "termMonths": 60,
-        "planName": "5-Year Subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG PuriCare 360° HIT is a value-focused omnidirectional air purifier. An H13 HEPA filter and a three-stage deodorising layer handle dust, allergens and household odours across rooms up to 61.2 m², with Clean Booster spreading cleaner air faster and a 10-year inverter motor warranty backing it up.",
@@ -3230,12 +3216,22 @@
       {
         "monthly": 60,
         "termMonths": 84,
-        "planName": "7-Year Subscription"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 80,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5-Year Subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "AeroFurniture is a compact LG air purifier shaped like a chic side table — perfect for small apartments where floor space is precious. It filters 360 degrees through an H13 HEPA filter, charges your phone wirelessly on its top surface, and sets the mood with ambient lighting controlled through LG ThinQ.",
@@ -3397,24 +3393,22 @@
       {
         "monthly": 65,
         "termMonths": 84,
-        "planName": "7-Year Subscription"
+        "planName": "7 Years Self-Service"
       },
       {
-        "monthly": 95,
-        "termMonths": 60,
-        "planName": "5-Year Subscription"
-      },
-      {
-        "monthly": 95,
-        "termMonths": 60,
-        "planName": "5-Year Combine Maintenance",
-        "note": "Bundles regular servicing and filter care"
-      },
-      {
-        "monthly": 125,
+        "monthly": 85,
         "termMonths": 84,
-        "planName": "7-Year Combine Maintenance",
-        "note": "Bundles regular servicing and filter care"
+        "planName": "7 Years Regular Visit"
+      },
+      {
+        "monthly": 95,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 115,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The AeroBooster is a slim, tower-style LG air purifier with 360° airflow and a Clean Booster that throws purified air up to 7.5 metres across the room. Dual H13 HEPA filters plus UVnano sterilisation tackle ultra-fine dust, allergens and gases, and BAF certification makes it a fit for allergy-sensitive households.",
@@ -3553,25 +3547,22 @@
       {
         "monthly": 70,
         "termMonths": 84,
-        "planName": "7-Year Self Service",
-        "note": "DIY filter replacement — lowest monthly rate"
-      },
-      {
-        "monthly": 100,
-        "termMonths": 60,
-        "planName": "5-Year Self Service"
+        "planName": "7 Years Self-Service"
       },
       {
         "monthly": 90,
         "termMonths": 84,
-        "planName": "7-Year Regular Visit",
-        "note": "Scheduled technician maintenance included"
+        "planName": "7 Years Regular Visit"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
       },
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled technician maintenance included"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The AeroCatTower pairs powerful LG air purification with a heated lounging dome made for your cat. It cleans the air around pet-friendly homes while giving your cat a calm, warm retreat, and a Pet Care mode tracks their weight and rest through the LG ThinQ app.",
@@ -3750,12 +3741,22 @@
       {
         "monthly": 75,
         "termMonths": 84,
-        "planName": "7-Year Subscription"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 95,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 105,
         "termMonths": 60,
-        "planName": "5-Year Subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 125,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The PuriCare 360° Alpha Pet Single is a high-capacity cylindrical purifier tuned for pet households. A dedicated Pet Mode and V-Pet H13 filter pull in shed fur, dander and odours, while Clean Booster spreads cleaner air faster across rooms up to 61.2 m².",
@@ -3929,12 +3930,22 @@
       {
         "monthly": 105,
         "termMonths": 84,
-        "planName": "7-Year Subscription"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 125,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 135,
         "termMonths": 60,
-        "planName": "5-Year Subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 155,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The Alpha Pet Double stacks two 360° purification modules into a single tower, delivering 810 CMH CADR for homes up to 104 m². It combines Pet Mode, Baby Care and UVnano sterilisation to keep large living areas fresh even in heavy-use pet households.",
@@ -4019,7 +4030,7 @@
     "tagline": "Quiet 16 L/day dehumidifier with DUAL Inverter compressor and LG ThinQ — built for humid Malaysian homes.",
     "price": 70,
     "term": 84,
-    "outright": 3250,
+    "outright": 3000,
     "image": "/uploads/products/puricare-16l-dehumidifier/main.avif",
     "gallery": [
       "/uploads/products/puricare-16l-dehumidifier/gallery-1.avif",
@@ -4088,25 +4099,22 @@
       {
         "monthly": 70,
         "termMonths": 84,
-        "planName": "7-Year Self-Service",
-        "note": "Lowest monthly rate — DIY maintenance"
+        "planName": "7 Years Self-Service"
       },
       {
         "monthly": 90,
         "termMonths": 84,
-        "planName": "7-Year Regular Visit",
-        "note": "Scheduled technician service"
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5-Year Self-Service"
+        "planName": "5 Years Self-Service"
       },
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled technician service"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG PuriCare DD16GMEE1 pulls up to 16 litres of moisture from the air each day while staying whisper-quiet and energy efficient. Its DUAL Inverter compressor, LG ThinQ connectivity and compact frame make it a practical fit for bedrooms, laundry corners and open living areas across humid Malaysian homes.",
@@ -4235,8 +4243,7 @@
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit Care",
-        "note": "Zero upfront, free servicing throughout the term"
+        "planName": "5 Years Self-Service"
       }
     ],
     "heroDescription": "The LG CordZero A9X pairs a cordless stick vacuum with an all-in-one charging tower that automatically empties the bin after every clean. A swappable Steam Power Mop lets the same handle vacuum and sanitise hard floors in one pass, while LG ThinQ keeps tabs on performance from your phone.",
@@ -4309,7 +4316,8 @@
         "a": "Yes — it pairs with LG ThinQ for usage tracking, maintenance alerts and firmware updates over Wi-Fi."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "neochef-39l",
@@ -4371,26 +4379,12 @@
       {
         "monthly": 60,
         "termMonths": 60,
-        "planName": "5-Year Self-Service",
-        "note": "Lowest monthly rate — DIY maintenance"
+        "planName": "5 Years Self-Service"
       },
       {
         "monthly": 80,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Scheduled technician service visits"
-      },
-      {
-        "monthly": 100,
-        "termMonths": 36,
-        "planName": "3-Year Self-Service",
-        "note": "Shorter term, DIY maintenance"
-      },
-      {
-        "monthly": 120,
-        "termMonths": 36,
-        "planName": "3-Year Regular Visit",
-        "note": "Shorter term with scheduled service visits"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "LG's 39-litre NeoChef microwave brings Smart Inverter technology to a roomy countertop footprint. Everyday reheating, defrosting and cooking stay even from edge to centre, and the touch panel, auto-cook presets and EasyClean interior keep day-to-day use simple.",
@@ -4465,7 +4459,8 @@
         "a": "The EasyClean interior lining is designed to resist stuck-on grease, so in most cases a damp cloth is enough to wipe the cavity clean."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "lg-styler-s3wf",
@@ -4475,7 +4470,7 @@
     "tagline": "TrueSteam smart wardrobe that refreshes, sanitises and gently dries clothes at home — no detergent needed.",
     "price": 90,
     "term": 84,
-    "outright": 5899,
+    "outright": null,
     "image": "/uploads/1776397114748-thum-1600x1062.avif",
     "gallery": [
       "/uploads/products/lg-styler-s3wf/gallery-4.jpg",
@@ -4523,14 +4518,22 @@
       {
         "monthly": 90,
         "termMonths": 84,
-        "planName": "7-Year Rental",
-        "note": "Includes installation, aroma sheet refills every 6 months and tank servicing every 2 years"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 84,
+        "planName": "7 Years Combined Maintenance"
       },
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "5-Year Rental",
-        "note": "Same inclusions over a shorter term"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 120,
+        "termMonths": 60,
+        "planName": "5 Years Combined Maintenance"
       }
     ],
     "heroDescription": "The LG Styler S3WF is a cabinet-style steam wardrobe that brings garment care into the home. Using TrueSteam technology, it lifts wrinkles, removes odours and sanitises fabrics without harsh chemicals. Delicate drying and a trouser crease mode round out a flexible set of fabric-care cycles.",
@@ -4707,37 +4710,32 @@
       {
         "monthly": 110,
         "termMonths": 84,
-        "planName": "7-Year Self-Service",
-        "note": "Filters shipped to your door every 6 months"
+        "planName": "7 Years Self-Service"
       },
       {
         "monthly": 120,
         "termMonths": 84,
-        "planName": "7-Year Combined Maintenance",
-        "note": "Mix of self-service and scheduled technician visits"
+        "planName": "7 Years Combined Maintenance"
       },
       {
         "monthly": 130,
         "termMonths": 84,
-        "planName": "7-Year Regular Visit",
-        "note": "Full technician service every 3–6 months"
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 140,
         "termMonths": 60,
-        "planName": "5-Year Self-Service",
-        "note": "Shorter term, DIY filter replacement"
+        "planName": "5 Years Self-Service"
       },
       {
         "monthly": 150,
         "termMonths": 60,
-        "planName": "5-Year Combined Maintenance"
+        "planName": "5 Years Combined Maintenance"
       },
       {
         "monthly": 160,
         "termMonths": 60,
-        "planName": "5-Year Regular Visit",
-        "note": "Full technician care across 60 months"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "ATOM-U hides the whole purifier under the counter and leaves just a sleek swing spout on top. It delivers cold water and three hot temperatures through LG's tankless system, with UVnano, automatic pipe sterilisation and WQA-certified filtration keeping every pour clean.",
@@ -4910,14 +4908,32 @@
       {
         "monthly": 70,
         "termMonths": 84,
-        "planName": "7-Year Self-Service Rental",
-        "note": "Lowest monthly rate, DIY filter replacement"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 80,
+        "termMonths": 84,
+        "planName": "7 Years Combined Maintenance"
+      },
+      {
+        "monthly": 90,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5-Year Rental",
-        "note": "Shorter term, self-service care"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Combined Maintenance"
+      },
+      {
+        "monthly": 120,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG PuriCare WD518 ATOM-V is part of LG's Objet Collection — a tankless self-service water purifier that blends into modern kitchens in five colour finishes. It dispenses cold, ambient and three hot temperatures on demand, with UVnano spout sterilisation and LG ThinQ smart monitoring.",
@@ -5094,14 +5110,32 @@
       {
         "monthly": 70,
         "termMonths": 84,
-        "planName": "7-Year Rental",
-        "note": "Lowest monthly rate — includes free LG CareShip"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 80,
+        "termMonths": 84,
+        "planName": "7 Years Combined Maintenance"
+      },
+      {
+        "monthly": 90,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5-Year Rental",
-        "note": "Shorter term subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Combined Maintenance"
+      },
+      {
+        "monthly": 120,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG PuriCare 4-WARD+ is a slim 17 cm self-service tankless water purifier that dispenses hot, cold and ambient water on demand. A 4-stage Ultra Filtration system, UV-LED sterilisation and stainless steel internal piping keep every pour clean, while voice guidance and filter change alerts make maintenance effortless.",
@@ -5275,14 +5309,32 @@
       {
         "monthly": 60,
         "termMonths": 84,
-        "planName": "7-Year Rental",
-        "note": "Lowest monthly rate"
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 70,
+        "termMonths": 84,
+        "planName": "7 Years Combined Maintenance"
+      },
+      {
+        "monthly": 80,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
       },
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5-Year Rental",
-        "note": "Shorter term subscription"
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 60,
+        "planName": "5 Years Combined Maintenance"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The LG PuriCare MX is a slim 132 mm wide desktop purifier that slides into tight kitchen corners. It delivers hot and ambient water on demand through a plate heater, with a 4-stage UF filter, automatic sterilisation and a three-way light system that doubles as mood lighting, night-drink illumination and status alert.",
@@ -5359,314 +5411,8 @@
         "a": "Yes. The unit offers mood lighting, a dispensing light and an alarm light, all configurable via the unit or the LG ThinQ app."
       }
     ],
-    "status": "online"
-  },
-  {
-    "slug": "slim-stand-s1-ws510sn",
-    "category": "water-purifiers",
-    "name": "LG PuriCare Slim Stand S1 Floor-Standing Water Purifier",
-    "model": "WS510SN",
-    "tagline": "LG's first Inverter floor-standing purifier — 7.5 L cold tank, 270 mm clearance and 10-year compressor warranty.",
-    "price": 130,
-    "term": 60,
-    "outright": 5000,
-    "image": "/uploads/products/slim-stand-s1-ws510sn/main.avif",
-    "gallery": [
-      "/uploads/products/slim-stand-s1-ws510sn/gallery-1.avif",
-      "/uploads/products/slim-stand-s1-ws510sn/gallery-2.avif",
-      "/uploads/products/slim-stand-s1-ws510sn/gallery-3.avif",
-      "/uploads/products/slim-stand-s1-ws510sn/gallery-4.avif",
-      "/uploads/products/slim-stand-s1-ws510sn/gallery-5.avif"
-    ],
-    "features": [
-      "First LG floor-standing purifier with Smart Inverter Compressor",
-      "7.5 L sealed stainless steel cold water tank",
-      "270 mm dispensing gap for large bottles and jugs",
-      "4-stage multi-filter removes heavy metals",
-      "Single-button temperature selection with status lamp",
-      "1.9 L drip tray with float overflow indicator",
-      "10-year Smart Inverter Compressor warranty",
-      "Free CareShip with quarterly maintenance visits"
-    ],
-    "specs": [
-      {
-        "label": "Model",
-        "value": "WS510SN"
-      },
-      {
-        "label": "Colour",
-        "value": "White"
-      },
-      {
-        "label": "Installation",
-        "value": "Free-standing"
-      },
-      {
-        "label": "Cold Tank",
-        "value": "7.5 L sealed stainless steel"
-      },
-      {
-        "label": "Drip Tray",
-        "value": "1.9 L with float indicator"
-      },
-      {
-        "label": "Dispensing Gap",
-        "value": "270 mm"
-      },
-      {
-        "label": "Filter",
-        "value": "4-stage multi-filter"
-      },
-      {
-        "label": "Compressor",
-        "value": "Smart Inverter Compressor"
-      },
-      {
-        "label": "Compressor Warranty",
-        "value": "10 years"
-      }
-    ],
-    "pricing": [
-      {
-        "monthly": 130,
-        "termMonths": 60,
-        "planName": "5-Year Monthly Rental",
-        "note": "Free installation and CareShip included"
-      }
-    ],
-    "heroDescription": "Slim Stand S1 is LG's first Inverter floor-standing water purifier, built around a 7.5 L sealed stainless steel cold water tank and a 10-year Smart Inverter Compressor. A 270 mm dispensing gap fits tall bottles directly, and a single button with colour-coded status lamp keeps daily use simple.",
-    "sections": [
-      {
-        "heading": "First Inverter Stand Purifier",
-        "body": "The Smart Inverter Compressor reduces power draw by cooling in four stages — cool, measure required capacity, optimise control and save energy.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-1.avif"
-      },
-      {
-        "heading": "10-Year Compressor Warranty",
-        "body": "The unit reuses LG's refrigerator compressor technology, backed by a 10-year warranty for long-term peace of mind.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-2.avif"
-      },
-      {
-        "heading": "7.5 L Cold Water Tank",
-        "body": "A generous 7.5 litre cold water reserve is sized for busy offices, restaurants and larger households.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-3.avif"
-      },
-      {
-        "heading": "4-Stage Multi-Filter",
-        "body": "A four-step multi-filter strips heavy metals from incoming water, and a sealed stainless steel cold tank limits staining and bacteria compared with plastic tanks.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-4.avif"
-      },
-      {
-        "heading": "Spacious Dispensing Gap",
-        "body": "A 270 mm dispensing gap accommodates tall bottles directly, and the 1.9 L drip tray uses a float indicator so you know when to empty it.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-5.avif"
-      },
-      {
-        "heading": "One-Button Simplicity",
-        "body": "A single button selects water temperature, and a colour-coded lamp signals sanitary status and filter-replacement timing at a glance.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-6.avif"
-      },
-      {
-        "heading": "Compact Footprint",
-        "body": "Despite the large cold tank the body keeps a slim floor footprint that slots into corners of kitchens, pantries and small offices.",
-        "image": "/uploads/products/slim-stand-s1-ws510sn/section-7.avif"
-      }
-    ],
-    "whatsInBox": [
-      "LG Slim Stand WS510SN main unit",
-      "Drip tray",
-      "Installation kit",
-      "User manual and warranty card"
-    ],
-    "warranty": "10-year Smart Inverter Compressor warranty. Free LG CareShip includes quarterly maintenance visits, 6-monthly filter changes and annual internal piping replacement.",
-    "faqs": [
-      {
-        "q": "How much does it cost?",
-        "a": "RM130/month on a 5-year rental, or RM5,000 outright. 0% instalment up to 36 months is available via Maybank, CIMB, RHB, Public Bank and Hong Leong credit cards."
-      },
-      {
-        "q": "How big is the cold water tank?",
-        "a": "The sealed stainless steel cold water tank holds 7.5 litres — enough for busy offices or larger households."
-      },
-      {
-        "q": "Can I fit a 1.5 L bottle under the spout?",
-        "a": "Yes. The 270 mm dispensing gap accommodates most large bottles and jugs directly, without having to tilt them."
-      },
-      {
-        "q": "What does Free LG CareShip include?",
-        "a": "Quarterly maintenance visits by an LG CareLady, filter changes every 6 months, and internal piping replacement once a year."
-      },
-      {
-        "q": "What does the 10-year warranty cover?",
-        "a": "LG's Smart Inverter Compressor is covered for 10 years. Other parts and filter cover follow the chosen subscription plan."
-      }
-    ],
-    "status": "online"
-  },
-  {
-    "slug": "slim-stand-s2-ws410gn",
-    "category": "water-purifiers",
-    "name": "LG PuriCare Slim Stand S2 Floor-Standing Water Purifier",
-    "model": "WS410GN",
-    "tagline": "26 cm slim floor stand with tankless cold flow, 2.5 L sealed hot tank and Grade 1 energy rating.",
-    "price": 110,
-    "term": 60,
-    "outright": 3500,
-    "image": "/uploads/products/slim-stand-s2-ws410gn/main.png",
-    "gallery": [
-      "/uploads/products/slim-stand-s2-ws410gn/gallery-1.png",
-      "/uploads/products/slim-stand-s2-ws410gn/gallery-2.jpg",
-      "/uploads/products/slim-stand-s2-ws410gn/gallery-3.jpg",
-      "/uploads/products/slim-stand-s2-ws410gn/gallery-4.jpg",
-      "/uploads/products/slim-stand-s2-ws410gn/gallery-5.jpg"
-    ],
-    "features": [
-      "26 cm wide slim floor-standing body",
-      "Tankless instant cold water — continuous flow even during peak use",
-      "2.5 L sealed stainless steel hot water tank",
-      "4-stage Ultra Filtration: Sediment → Pre-Carbon Block+ → UF → Post Carbon",
-      "Removes 7 types of heavy metals",
-      "Inverter Compressor with 10-year warranty",
-      "Energy Grade 1 rating at 23.1 kWh/month",
-      "Quarterly technician service and annual pipe replacement"
-    ],
-    "specs": [
-      {
-        "label": "Model",
-        "value": "WS410GN"
-      },
-      {
-        "label": "Dimensions",
-        "value": "260 x 1150 x 470 mm (W x H x D)"
-      },
-      {
-        "label": "Colour",
-        "value": "White"
-      },
-      {
-        "label": "Cold Water",
-        "value": "Instant (tankless)"
-      },
-      {
-        "label": "Hot Water",
-        "value": "2.5 L sealed stainless steel tank"
-      },
-      {
-        "label": "Filter",
-        "value": "4-stage Ultra Filtration"
-      },
-      {
-        "label": "Filter Stages",
-        "value": "Sediment → Pre-Carbon Block Plus → UF → Post Carbon"
-      },
-      {
-        "label": "Compressor",
-        "value": "Inverter Compressor (10-year warranty)"
-      },
-      {
-        "label": "Energy Grade",
-        "value": "Grade 1 (23.1 kWh/month)"
-      },
-      {
-        "label": "Maintenance",
-        "value": "Every 3 months"
-      },
-      {
-        "label": "Service",
-        "value": "Total Service Care — 1-year pipe replacement, 3-month visiting care"
-      }
-    ],
-    "pricing": [
-      {
-        "monthly": 110,
-        "termMonths": 60,
-        "planName": "5-Year Monthly Rental",
-        "note": "Free CareShip, free installation, no upfront payment"
-      }
-    ],
-    "heroDescription": "The LG PuriCare Slim Stand S2 is a 26 cm wide floor-standing purifier built for offices, clinics and busy homes. It pairs tankless instant cold water with a 2.5 L sealed stainless steel hot water tank, and LG's Total Service Care programme handles filter changes every three months plus annual internal pipe replacement.",
-    "sections": [
-      {
-        "heading": "Unlimited Cold Flow",
-        "body": "Uses direct tankless filtration so chilled water keeps flowing even during peak demand — no waiting for a storage tank to refill.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-1.jpg"
-      },
-      {
-        "heading": "Sealed Stainless Steel Hot Tank",
-        "body": "Filtered hot water is stored in a sealed stainless steel tank that blocks airborne contamination and resists staining.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-2.jpg"
-      },
-      {
-        "heading": "2.5 L Big Hot Water Capacity",
-        "body": "A 2.5 litre hot water tank covers back-to-back drinks during busy periods in offices and busy kitchens.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-3.jpg"
-      },
-      {
-        "heading": "Energy-Efficient Inverter Compressor",
-        "body": "The Inverter Compressor System delivers cold water efficiently and is backed by a 10-year compressor warranty.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-4.jpg"
-      },
-      {
-        "heading": "Hassle-Free Service at Your Door",
-        "body": "Scheduled maintenance visits and filter replacements are included as part of LG's Total Service Care programme.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-5.jpg"
-      },
-      {
-        "heading": "Annual Internal Pipe Replacement",
-        "body": "LG replaces the internal water pipes once a year to help maintain long-term hygiene.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-6.jpg"
-      },
-      {
-        "heading": "Maintenance Every 3 Months",
-        "body": "Licensed LG technicians visit every three months for sanitisation and filter changes at no extra cost.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-7.jpg"
-      },
-      {
-        "heading": "26 cm Slim Design",
-        "body": "A narrow 26 cm wide body slots into most kitchens, offices, clinics and small shops without crowding the floor.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-8.jpg"
-      },
-      {
-        "heading": "High Nozzle, Wide Drip Tray",
-        "body": "A 117 mm deep, 270 mm tall dispensing area accommodates taller bottles and wider jugs underneath the spout.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-9.jpg"
-      },
-      {
-        "heading": "4-Stage Filtration",
-        "body": "Four stages — Sediment, Pre-Carbon Block Plus, UF membrane and Post Carbon — remove microorganisms and seven types of heavy metals.",
-        "image": "/uploads/products/slim-stand-s2-ws410gn/section-10.jpg"
-      }
-    ],
-    "whatsInBox": [
-      "LG Slim Stand WS410GN main unit",
-      "Drip tray",
-      "Installation kit",
-      "User manual and warranty card"
-    ],
-    "warranty": "10-year Inverter Compressor warranty. Total Service Care: quarterly LG CareLady maintenance visits, 6-monthly filter changes, and annual internal water pipe replacement.",
-    "faqs": [
-      {
-        "q": "How much does the Slim Stand S2 cost?",
-        "a": "RM110/month on a 5-year rental with free CareShip, free installation and no upfront payment. Outright purchase is RM3,500."
-      },
-      {
-        "q": "How often is it serviced?",
-        "a": "A licensed LG technician visits every three months to change the filter and sanitise the unit. Internal water pipes are replaced once a year — all at no extra cost on the rental plan."
-      },
-      {
-        "q": "Is it energy efficient?",
-        "a": "Yes. It carries Malaysia's Grade 1 energy rating at around 23.1 kWh/month, helped by an Inverter Compressor System."
-      },
-      {
-        "q": "Where is it typically installed?",
-        "a": "The 26 cm wide body is suited to offices, clinics, restaurants, shops and homes that need a continuous supply of hot and cold water."
-      },
-      {
-        "q": "Can I fit a tall bottle under the spout?",
-        "a": "Yes. The dispensing area is 117 mm deep and 270 mm tall, so larger bottles and jugs slide in directly without tilting."
-      }
-    ],
-    "status": "online"
+    "status": "online",
+    "outright": 2800
   },
   {
     "slug": "dual-inverter-1hp-s3q09",
@@ -5720,8 +5466,7 @@
       {
         "monthly": 80,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Includes free aircond service every 12 months for 5 years"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "An entry-level 1.0HP LG split air conditioner on the LG Subscribe plan. Built around the DUAL Inverter Compressor for fast, efficient and quiet cooling of small bedrooms, with Plasmaster Ionizer+ for cleaner indoor air and LG ThinQ smart control.",
@@ -5797,7 +5542,8 @@
         "a": "You can renew, upgrade or return the unit per the LG Subscribe terms."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "dual-inverter-1-5hp-s3q12",
@@ -5851,8 +5597,7 @@
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Includes free aircond service every 12 months for 5 years"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A popular 1.5HP LG split for medium-sized rooms on the LG Subscribe plan. Combines the DUAL Inverter Compressor, Plasmaster ionisation and LG ThinQ smart control in one package — with annual servicing included for the full 5-year term.",
@@ -5928,7 +5673,8 @@
         "a": "Early termination terms apply — refer to the LG Subscribe contract or chat with our consultants."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "dual-inverter-2hp-s3q18",
@@ -5982,8 +5728,7 @@
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Includes free aircond service every 12 months for 5 years"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "A 2.0HP LG split air conditioner sized for larger bedrooms and compact living areas, offered on a 5-year LG Subscribe plan. Pairs the DUAL Inverter Compressor with Plasmaster ionisation and LG ThinQ smart control — with annual servicing bundled in.",
@@ -6059,7 +5804,8 @@
         "a": "Upgrade options depend on the contract terms — chat with our consultants for current offers."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "dual-inverter-2-5hp-s3q24",
@@ -6113,8 +5859,7 @@
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Includes free aircond service every 12 months for 5 years"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "LG's 2.5HP DUAL Inverter split for bigger rooms, offered on a 5-year LG Subscribe plan with annual servicing. Combines fast cooling, low noise, Plasmaster ionisation and LG ThinQ smart control.",
@@ -6190,7 +5935,8 @@
         "a": "Yes. It supports common voice assistants through LG ThinQ."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "artcool-1-5hp-s3q12r",
@@ -6288,8 +6034,7 @@
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Annual servicing included"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The 1.5HP LG ARTCOOL pairs a striking mirrored-glass front panel with the DUAL Inverter Compressor. It cools quickly, runs quietly and adds Plasmaster ionisation plus LG ThinQ smart control — designed to blend into your room rather than dominate it.",
@@ -6365,7 +6110,8 @@
         "a": "Yes. LG Subscribe plans include scheduled servicing for the contract term."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "artcool-2-5hp-s3q24r",
@@ -6455,8 +6201,7 @@
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5-Year Subscribe",
-        "note": "Annual servicing included"
+        "planName": "5 Years Regular Visit"
       }
     ],
     "heroDescription": "The 2.5HP LG ARTCOOL brings LG's mirrored-glass aesthetic to larger rooms, paired with a powerful DUAL Inverter Compressor and Plasmaster ionisation. Offered on a 5-year LG Subscribe plan with annual servicing included.",
@@ -6532,291 +6277,8 @@
         "a": "Yes. LG Subscribe plans include annual servicing for the 5-year contract."
       }
     ],
-    "status": "online"
-  },
-  {
-    "slug": "xboom-grab",
-    "category": "audio",
-    "name": "LG xboom Grab by will.i.am",
-    "model": "GRAB (2025)",
-    "tagline": "Ultra-portable 700 g tube speaker with xboom tuning, IP67 rugged build and 20-hour battery.",
-    "price": null,
-    "term": null,
-    "outright": 749,
-    "image": "/uploads/products/xboom-grab/main.jpg",
-    "gallery": [
-      "/uploads/products/xboom-grab/gallery-1.jpg",
-      "/uploads/products/xboom-grab/gallery-2.jpg",
-      "/uploads/products/xboom-grab/gallery-3.jpg",
-      "/uploads/products/xboom-grab/gallery-4.jpg",
-      "/uploads/products/xboom-grab/gallery-5.jpg"
-    ],
-    "features": [
-      "Compact 700 g tube body for one-handed carry",
-      "2-way audio with 16 mm Peerless tweeter and racetrack woofer",
-      "Up to 20 hours of playback on Bluetooth",
-      "IP67 dust and water protection with MIL-STD-810H testing",
-      "AI Sound and AI Calibration adapt tuning automatically",
-      "Bluetooth 5.4 multipoint plus Auracast broadcast support",
-      "Party Link pairs with other 2025 xboom speakers",
-      "USB-C charging with on-device battery indicator"
-    ],
-    "specs": [
-      {
-        "label": "Output Power",
-        "value": "20 W + 10 W"
-      },
-      {
-        "label": "Channels",
-        "value": "1.1ch (2-way)"
-      },
-      {
-        "label": "Tweeter",
-        "value": "16 mm Peerless dome"
-      },
-      {
-        "label": "Woofer",
-        "value": "80 x 45 mm racetrack"
-      },
-      {
-        "label": "Passive Radiators",
-        "value": "2"
-      },
-      {
-        "label": "Battery Life",
-        "value": "20 hours"
-      },
-      {
-        "label": "Charging Time",
-        "value": "3 hours"
-      },
-      {
-        "label": "Dimensions",
-        "value": "211.0 x 71.6 x 70.0 mm"
-      },
-      {
-        "label": "Weight",
-        "value": "0.7 kg"
-      },
-      {
-        "label": "Ip Rating",
-        "value": "IP67"
-      },
-      {
-        "label": "Bluetooth",
-        "value": "5.4"
-      },
-      {
-        "label": "Connector",
-        "value": "USB-C"
-      }
-    ],
-    "heroDescription": "The xboom Grab is the smallest of the 2025 xboom line, built around a tubular body that fits in one hand. Under will.i.am's tuning it squeezes 2-way sound from a 16 mm dome tweeter and racetrack woofer, with IP67 rugged protection and a 20-hour battery.",
-    "sections": [
-      {
-        "heading": "Tube-Shaped, Easy to Grab",
-        "body": "The cylindrical body is sized to carry in one hand and comes with an adjustable strap for clipping onto a bag.",
-        "image": "/uploads/products/xboom-grab/section-1.jpg"
-      },
-      {
-        "heading": "Peerless Dome Tweeter",
-        "body": "A 16 mm Peerless tweeter sits above a racetrack woofer and dual passive radiators to deliver wider sound than its size suggests.",
-        "image": "/uploads/products/xboom-grab/section-2.jpg"
-      },
-      {
-        "heading": "AI-Tuned Output",
-        "body": "AI Sound shifts modes based on the genre playing, while AI Calibration adapts levels to the room's shape and size.",
-        "image": "/uploads/products/xboom-grab/section-3.jpg"
-      },
-      {
-        "heading": "Rugged IP67 Build",
-        "body": "Sealed against dust and rated for short submersion up to one metre, with seven military-grade durability tests behind it.",
-        "image": "/uploads/products/xboom-grab/section-4.jpg"
-      },
-      {
-        "heading": "Twenty-Hour Battery",
-        "body": "Up to 20 hours of listening at moderate volume; a full charge takes about three hours over USB-C.",
-        "image": "/uploads/products/xboom-grab/section-5.jpg"
-      },
-      {
-        "heading": "Party Link Across the Range",
-        "body": "Chain the Grab with a Bounce or Stage 301 to extend coverage, or join an Auracast broadcast."
-      },
-      {
-        "heading": "Signed Off by will.i.am",
-        "body": "will.i.am acted as LG's Experiential Architect, dialling in an energetic signature for this compact form factor."
-      }
-    ],
-    "whatsInBox": [
-      "LG xboom Grab speaker",
-      "Adjustable strap",
-      "USB-C charging cable",
-      "Warranty card"
-    ],
-    "warranty": "Standard LG Malaysia warranty.",
-    "faqs": [
-      {
-        "q": "How portable is the Grab?",
-        "a": "It's the smallest 2025 xboom at 700 g, with an adjustable strap designed to carry or clip onto a bag."
-      },
-      {
-        "q": "Can it handle rain at the pool or beach?",
-        "a": "Yes. The IP67 rating covers full dust protection and immersion up to 1 m for 30 minutes."
-      },
-      {
-        "q": "Does it pair with other xboom speakers?",
-        "a": "Yes. Party Link links it with the 2025 Bounce and Stage 301, and it also supports Auracast."
-      },
-      {
-        "q": "What's the battery life?",
-        "a": "Up to 20 hours at 50% volume over Bluetooth, with a 3-hour recharge over USB-C."
-      },
-      {
-        "q": "Is subscription pricing available?",
-        "a": "xboom is currently listed as an outright purchase at RM749. Chat with us on WhatsApp to check for any subscription promotions."
-      }
-    ],
-    "status": "online"
-  },
-  {
-    "slug": "xboom-bounce",
-    "category": "audio",
-    "name": "LG xboom Bounce by will.i.am",
-    "model": "BOUNCE (2025)",
-    "tagline": "Rugged 30-hour portable speaker with stereo xboom tuning, IP67 build and detachable strap.",
-    "price": null,
-    "term": null,
-    "outright": 899,
-    "image": "/uploads/products/xboom-bounce/main.jpg",
-    "gallery": [
-      "/uploads/products/xboom-bounce/gallery-1.jpg",
-      "/uploads/products/xboom-bounce/gallery-2.jpg",
-      "/uploads/products/xboom-bounce/gallery-3.jpg",
-      "/uploads/products/xboom-bounce/gallery-4.jpg",
-      "/uploads/products/xboom-bounce/gallery-5.jpg"
-    ],
-    "features": [
-      "Signature xboom tuning by Grammy-winner will.i.am",
-      "Stereo 2.1 output: 30 W woofer plus 5 W × 2 dome tweeters",
-      "Detachable strap for carrying, hanging or tabletop placement",
-      "IP67 rated with MIL-STD-810H durability testing",
-      "Up to 30 hours of playback on a single charge",
-      "Bluetooth 5.4 with Auracast and quick LG pairing",
-      "AI Room Calibration adjusts output to the listening space",
-      "Dual upward-firing passive radiators for fuller bass"
-    ],
-    "specs": [
-      {
-        "label": "Output Power",
-        "value": "30 W + 5 W × 2"
-      },
-      {
-        "label": "Channels",
-        "value": "2.1ch (Stereo)"
-      },
-      {
-        "label": "Bluetooth",
-        "value": "5.4"
-      },
-      {
-        "label": "Battery Life",
-        "value": "30 hours"
-      },
-      {
-        "label": "Charging Time",
-        "value": "3 hours"
-      },
-      {
-        "label": "Ip Rating",
-        "value": "IP67"
-      },
-      {
-        "label": "Dimensions",
-        "value": "272 x 103 x 88 mm (W x H x D)"
-      },
-      {
-        "label": "Weight",
-        "value": "1.42 kg"
-      },
-      {
-        "label": "Tweeter",
-        "value": "20 mm Peerless dome × 2"
-      },
-      {
-        "label": "Woofer",
-        "value": "93 x 53 mm"
-      },
-      {
-        "label": "Passive Radiators",
-        "value": "2"
-      }
-    ],
-    "heroDescription": "The xboom Bounce pairs a rugged, strap-ready body with stereo xboom sound signed off by will.i.am. An IP67 build and MIL-STD-810H testing let it handle pool, beach or trail, while a 30-hour battery keeps sessions going all day.",
-    "sections": [
-      {
-        "heading": "Signature Sound, Tuned by will.i.am",
-        "body": "Every aspect of the audio is shaped by will.i.am, delivering stereo xboom tuning across dual dome tweeters and a central woofer.",
-        "image": "/uploads/products/xboom-bounce/section-1.jpg"
-      },
-      {
-        "heading": "Carry It, Hang It, Stand It",
-        "body": "A removable strap lets you grab the speaker single-handed, loop it on a hook, or sit it upright on any flat surface.",
-        "image": "/uploads/products/xboom-bounce/section-2.jpg"
-      },
-      {
-        "heading": "Built for the Outdoors",
-        "body": "An IP67 seal and seven military-grade tests mean dust, splashes, drops and temperature swings are all handled.",
-        "image": "/uploads/products/xboom-bounce/section-3.jpg"
-      },
-      {
-        "heading": "All-Day Battery",
-        "body": "A full charge runs for up to 30 hours, so most weekend trips finish before the speaker does.",
-        "image": "/uploads/products/xboom-bounce/section-4.jpg"
-      },
-      {
-        "heading": "Peerless Dome Tweeters",
-        "body": "Two 20 mm Peerless dome tweeters push clean highs while dual passive radiators reinforce the bass.",
-        "image": "/uploads/products/xboom-bounce/section-5.jpg"
-      },
-      {
-        "heading": "Smart Room Calibration",
-        "body": "Built-in AI listening tunes the output to suit the room or open space you're in."
-      },
-      {
-        "heading": "Auracast and Party Link",
-        "body": "Bluetooth 5.4 supports Auracast broadcasts and lets you pair multiple 2025 xboom units for a larger setup."
-      }
-    ],
-    "whatsInBox": [
-      "LG xboom Bounce speaker",
-      "USB-C charging cable",
-      "Detachable carry strap",
-      "Warranty card"
-    ],
-    "warranty": "Standard LG Malaysia warranty.",
-    "faqs": [
-      {
-        "q": "Is the Bounce waterproof?",
-        "a": "Yes. It's rated IP67, sealed against dust and capable of brief shallow-water submersion."
-      },
-      {
-        "q": "How long does the battery last?",
-        "a": "Up to 30 hours per charge, with a full top-up in about 3 hours over USB-C."
-      },
-      {
-        "q": "Can I pair two Bounce units together?",
-        "a": "Yes. Party Link allows pairing with another Bounce, Grab or Stage 301 from the 2025 xboom line."
-      },
-      {
-        "q": "Does it work with iPhone and Android?",
-        "a": "Yes. It uses standard Bluetooth 5.4 and supports Auracast plus Google Assistant and Siri on the host phone."
-      },
-      {
-        "q": "Is subscription pricing available?",
-        "a": "xboom Bounce is listed at RM899 outright. Chat with us on WhatsApp to check for current subscription offers."
-      }
-    ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "xboom-stage-301",
@@ -6946,7 +6408,8 @@
         "a": "LG lists the Stage 301 under LG Subscribe in Malaysia, but the monthly rate isn't yet published. Chat with us on WhatsApp for current terms."
       }
     ],
-    "status": "online"
+    "status": "online",
+    "outright": null
   },
   {
     "slug": "smart-monitor-swing-32u889sa",
@@ -6956,7 +6419,7 @@
     "tagline": "31.5-inch 4K touchscreen on a rolling stand with webOS 24 — monitor, TV and smart home hub in one.",
     "price": null,
     "term": null,
-    "outright": 3899,
+    "outright": null,
     "status": "online",
     "image": "/uploads/products/smart-monitor-swing-32u889sa/main.jpg",
     "gallery": [
@@ -7216,8 +6679,8 @@
     "name": "LG Massage Recliner (Cozy Beige)",
     "model": "MH21BBY",
     "tagline": "Same AI massage recliner as the MH21RRY in a lighter Cozy Beige finish for neutral interiors.",
-    "price": null,
-    "term": null,
+    "price": 135,
+    "term": 60,
     "outright": null,
     "status": "online",
     "image": "/uploads/products/massage-recliner-mh21bby/main.jpg",
@@ -7343,6 +6806,18 @@
         "q": "Is subscription pricing available?",
         "a": "Pricing confirmed upon enquiry. Chat with us on WhatsApp for current plans."
       }
+    ],
+    "pricing": [
+      {
+        "monthly": 135,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 140,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
+      }
     ]
   },
   {
@@ -7351,8 +6826,8 @@
     "name": "LG 603L Top Freezer Fridge with Water Dispenser (Matte Black)",
     "model": "GRTF622PQHR",
     "tagline": "603 L top-freezer fridge in Essence Matte Black with LinearCooling, Hygiene Fresh and Smart Inverter Compressor.",
-    "price": null,
-    "term": null,
+    "price": 100,
+    "term": 60,
     "outright": null,
     "status": "online",
     "image": "/uploads/products/top-freezer-603l-grtf622/main.jpg",
@@ -7474,6 +6949,1972 @@
         "q": "Is subscription pricing available?",
         "a": "Pricing confirmed upon enquiry. Chat with us on WhatsApp for current plans."
       }
+    ],
+    "pricing": [
+      {
+        "monthly": 100,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
+      }
     ]
+  },
+  {
+    "slug": "lg-soundbar-s90ty",
+    "category": "soundbars",
+    "name": "LG Soundbar S90TY",
+    "model": "S90TY (2024)",
+    "tagline": "570W 5.1.3ch Dolby Atmos soundbar with up-firing centre channel — engineered to pair with LG OLED TVs.",
+    "price": 60,
+    "term": 60,
+    "outright": null,
+    "image": "/uploads/products/lg-soundbar-s90ty/main.jpg",
+    "gallery": [
+      "/uploads/products/lg-soundbar-s90ty/gallery-1.jpg",
+      "/uploads/products/lg-soundbar-s90ty/gallery-2.jpg",
+      "/uploads/products/lg-soundbar-s90ty/gallery-3.jpg",
+      "/uploads/products/lg-soundbar-s90ty/gallery-4.jpg"
+    ],
+    "features": [
+      "570W 5.1.3ch with 3 up-firing speakers and wireless subwoofer",
+      "Dolby Atmos, DTS:X and IMAX Enhanced for cinematic surround",
+      "Centre Up-firing Channel for lifelike on-screen dialogue",
+      "Triple Level Spatial Sound builds height, width and depth",
+      "AI Room Calibration Pro auto-tunes to your space",
+      "WOWCAST and WOW Interface — lossless wireless audio with LG OLED TVs",
+      "AirPlay 2, Chromecast and Spotify Connect built in",
+      "Hi-Res Audio certified up to 24-bit/96kHz playback"
+    ],
+    "specs": [
+      {
+        "label": "Output Power",
+        "value": "570W"
+      },
+      {
+        "label": "Channels",
+        "value": "5.1.3ch"
+      },
+      {
+        "label": "Up-firing Speakers",
+        "value": "3 (incl. centre channel)"
+      },
+      {
+        "label": "Wireless Subwoofer",
+        "value": "Yes"
+      },
+      {
+        "label": "Audio Formats",
+        "value": "Dolby Atmos, DTS:X, IMAX Enhanced"
+      },
+      {
+        "label": "AI Room Calibration",
+        "value": "Pro"
+      },
+      {
+        "label": "WOWCAST",
+        "value": "Yes (lossless)"
+      },
+      {
+        "label": "AirPlay 2",
+        "value": "Yes"
+      },
+      {
+        "label": "Chromecast",
+        "value": "Built-in"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3"
+      },
+      {
+        "label": "HDMI",
+        "value": "eARC + 2 HDMI inputs"
+      },
+      {
+        "label": "Hi-Res Audio",
+        "value": "24-bit/96kHz"
+      }
+    ],
+    "heroDescription": "The S90TY is LG's flagship 5.1.3-channel soundbar, designed to extend the cinematic experience of LG OLED TVs. A dedicated centre up-firing channel lifts dialogue forward, while AI Room Calibration Pro tunes Dolby Atmos and DTS:X to your room.",
+    "sections": [
+      {
+        "heading": "Centre Up-Firing Channel",
+        "body": "Most soundbars push dialogue forward through front-firing drivers. The S90TY adds a dedicated centre up-firing speaker so voices come from the screen — not below it.",
+        "image": "/uploads/products/lg-soundbar-s90ty/gallery-2.jpg"
+      },
+      {
+        "heading": "WOWCAST Wireless Lossless Audio",
+        "body": "Pair with a 2024 LG OLED TV via WOWCAST to send full lossless Dolby Atmos wirelessly. No HDMI cable runs across your wall.",
+        "image": "/uploads/products/lg-soundbar-s90ty/gallery-3.jpg"
+      },
+      {
+        "heading": "AI Room Calibration Pro",
+        "body": "Built-in mics measure your room and auto-tune each driver — top, side, centre — so the soundstage works whether you sit close or across the lounge.",
+        "image": "/uploads/products/lg-soundbar-s90ty/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Soundbar",
+      "Wireless subwoofer",
+      "Power cables",
+      "HDMI cable",
+      "Wall mount bracket",
+      "Remote with batteries",
+      "User guide"
+    ],
+    "warranty": "2 years manufacturer warranty",
+    "faqs": [
+      {
+        "q": "Does it work with non-LG TVs?",
+        "a": "Yes. The S90TY connects via HDMI eARC, Bluetooth, AirPlay 2 or Chromecast — WOWCAST and WOW Interface are the LG OLED bonus, but core Dolby Atmos works on any HDMI eARC TV."
+      },
+      {
+        "q": "Is the subwoofer wired or wireless?",
+        "a": "Wireless. It pairs automatically on power-up."
+      },
+      {
+        "q": "Can I subscribe instead of buying outright?",
+        "a": "Soundbars on LG Subscribe Malaysia ship with a 60- or 84-month plan. Speak to us via WhatsApp for current monthly pricing."
+      }
+    ],
+    "status": "online",
+    "pricing": [
+      {
+        "monthly": 60,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      }
+    ]
+  },
+  {
+    "slug": "cordzero-a9t-rmax",
+    "category": "vacuums",
+    "name": "LG CordZero A9Komp with All-in-One Tower (Calming Beige)",
+    "model": "A9T-RMAX",
+    "tagline": "Premium cordless stick vacuum with All-in-One Tower auto-empty, UVC LED sanitisation and Kompressor dust compression.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/cordzero-a9t-rmax/main.jpg",
+    "gallery": [
+      "/uploads/products/cordzero-a9t-rmax/gallery-1.jpg",
+      "/uploads/products/cordzero-a9t-rmax/gallery-2.jpg",
+      "/uploads/products/cordzero-a9t-rmax/gallery-3.jpg",
+      "/uploads/products/cordzero-a9t-rmax/gallery-4.jpg"
+    ],
+    "features": [
+      "210W Smart Inverter suction power",
+      "All-in-One Tower auto-empties in 45 seconds",
+      "UVC LED sanitisation built into the tower",
+      "Kompressor compresses dust 2.4× for fewer empties",
+      "Dual swappable Li-ion batteries — up to 120 min runtime",
+      "Power Drive Mop attachment (vacuum + mop in one pass)",
+      "5-step washable filtration",
+      "Made in Korea — 10-year motor warranty"
+    ],
+    "specs": [
+      {
+        "label": "Suction Power",
+        "value": "210W"
+      },
+      {
+        "label": "Runtime (dual battery, normal)",
+        "value": "120 min"
+      },
+      {
+        "label": "Turbo Runtime",
+        "value": "~14 min"
+      },
+      {
+        "label": "Charging Time",
+        "value": "240 min"
+      },
+      {
+        "label": "Dust Bin",
+        "value": "0.44 L"
+      },
+      {
+        "label": "Weight",
+        "value": "2.6 kg"
+      },
+      {
+        "label": "Motor",
+        "value": "Smart Inverter"
+      },
+      {
+        "label": "Filtration",
+        "value": "5-step washable"
+      },
+      {
+        "label": "Tower Empty Cycle",
+        "value": "45 sec"
+      },
+      {
+        "label": "Battery",
+        "value": "2 × Li-ion swappable"
+      },
+      {
+        "label": "Origin",
+        "value": "Made in Korea"
+      },
+      {
+        "label": "Warranty",
+        "value": "10-year motor"
+      }
+    ],
+    "heroDescription": "The A9T-RMAX is LG's flagship cordless vacuum — paired with the All-in-One Tower it empties itself, charges both batteries, and sanitises the bin with UVC LED. Kompressor tech crushes dust 2.4× so you empty less often.",
+    "sections": [
+      {
+        "heading": "All-in-One Tower",
+        "body": "Dock the wand and the tower auto-empties the bin in 45 seconds, charges both batteries, and runs a UVC LED cycle to sanitise.",
+        "image": "/uploads/products/cordzero-a9t-rmax/gallery-2.jpg"
+      },
+      {
+        "heading": "Kompressor Dust Compression",
+        "body": "Built-in compressor packs dust to 2.4× density. Empty the tower bag once every few weeks instead of after every clean.",
+        "image": "/uploads/products/cordzero-a9t-rmax/gallery-3.jpg"
+      },
+      {
+        "heading": "Power Drive Mop",
+        "body": "Swap to the Power Drive Mop attachment to vacuum and mop hard floors in one pass — no separate machine needed.",
+        "image": "/uploads/products/cordzero-a9t-rmax/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "A9Komp wand unit",
+      "All-in-One Tower",
+      "2 batteries",
+      "Combination tool",
+      "Crevice tool",
+      "Pet nozzle",
+      "Slim hard-floor nozzle",
+      "Power Drive Mop + 4 pads",
+      "Cleaning brush",
+      "Water measuring cup"
+    ],
+    "warranty": "2-year unit, 10-year Smart Inverter motor",
+    "faqs": [
+      {
+        "q": "How is this different from the A9X?",
+        "a": "A9T-RMAX adds the All-in-One Tower (auto-empty, UVC LED sanitise, dual battery charging) and Kompressor compression. Suction and battery system are also upgraded."
+      },
+      {
+        "q": "Can it replace my mop?",
+        "a": "Yes — the included Power Drive Mop attachment cleans hard floors in one pass."
+      },
+      {
+        "q": "How loud is the auto-empty?",
+        "a": "About 78 dB for 45 seconds — similar to a hand vacuum, then silent."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "neochef-mh6565cpw",
+    "category": "microwaves",
+    "name": "LG NeoChef 25L Smart Inverter Grill Microwave (Matt Black)",
+    "model": "MH6565CPW",
+    "tagline": "25L Smart Inverter grill microwave with 850W infrared grill — 1.5× faster, even heating, EasyClean interior.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/neochef-mh6565cpw/main.jpg",
+    "gallery": [
+      "/uploads/products/neochef-mh6565cpw/gallery-1.jpg",
+      "/uploads/products/neochef-mh6565cpw/gallery-2.jpg",
+      "/uploads/products/neochef-mh6565cpw/gallery-3.jpg",
+      "/uploads/products/neochef-mh6565cpw/gallery-4.jpg"
+    ],
+    "features": [
+      "Smart Inverter for precise power control",
+      "850W Infrared Grill for browning and crisping",
+      "Even Heating and Even Defrosting technology",
+      "1.5× faster cooking vs conventional microwaves",
+      "EasyClean antibacterial interior coating",
+      "Touch + dial controls with bright LED display",
+      "Stable turntable for spill-free operation",
+      "Matt Black STS finish with smog glass door"
+    ],
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "25 L"
+      },
+      {
+        "label": "Microwave Power",
+        "value": "1000W"
+      },
+      {
+        "label": "Grill Power",
+        "value": "850W (Infrared)"
+      },
+      {
+        "label": "Power Levels",
+        "value": "5"
+      },
+      {
+        "label": "Turntable",
+        "value": "292 mm"
+      },
+      {
+        "label": "Cavity",
+        "value": "322 × 228 × 335 mm"
+      },
+      {
+        "label": "Exterior",
+        "value": "476 × 272 × 397 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "9.4 kg"
+      },
+      {
+        "label": "Display",
+        "value": "LED"
+      },
+      {
+        "label": "Door",
+        "value": "Matt Black STS, smog glass"
+      },
+      {
+        "label": "Child Lock",
+        "value": "Yes"
+      },
+      {
+        "label": "Power",
+        "value": "240V / 50Hz"
+      }
+    ],
+    "heroDescription": "The MH6565CPW pairs LG's Smart Inverter with an 850W infrared grill, so you can microwave, grill, and combo-cook from one compact 25-litre cavity. Even heating distributes power across the cavity for 1.5× faster results.",
+    "sections": [
+      {
+        "heading": "Smart Inverter Precision",
+        "body": "Variable wave control runs at 30%, 50% or 70% power continuously — no on/off pulsing, so delicate dishes simmer without scorching.",
+        "image": "/uploads/products/neochef-mh6565cpw/gallery-2.jpg"
+      },
+      {
+        "heading": "Infrared Grill",
+        "body": "850W grill browns and crisps from above — pizza, sausages, sandwiches finish with real colour, not just heat.",
+        "image": "/uploads/products/neochef-mh6565cpw/gallery-3.jpg"
+      },
+      {
+        "heading": "EasyClean Interior",
+        "body": "Antibacterial coating wipes clean in seconds. No scrubbing, no chemical sprays.",
+        "image": "/uploads/products/neochef-mh6565cpw/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Microwave unit",
+      "Glass turntable tray",
+      "Crispy tray",
+      "High rack",
+      "Rotate ring",
+      "Rotate shaft",
+      "User manual"
+    ],
+    "warranty": "2-year unit, 10-year Smart Inverter magnetron",
+    "faqs": [
+      {
+        "q": "Can it bake?",
+        "a": "It can grill and combo (microwave + grill), but it isn't a convection oven — for true baking choose an LG combi microwave."
+      },
+      {
+        "q": "Is the interior really easy to clean?",
+        "a": "Yes — the EasyClean antibacterial coating wipes clean with a damp cloth. No abrasives needed."
+      },
+      {
+        "q": "Does it fit standard kitchen cabinets?",
+        "a": "It sits on a counter and needs 5 cm clearance around for ventilation. Check the 476 × 272 × 397 mm spec."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "puricare-dd16gmwe1",
+    "category": "dehumidifiers",
+    "name": "LG PuriCare 16L DUAL Inverter Dehumidifier (Essence White)",
+    "model": "DD16GMWE1",
+    "tagline": "16L/day PuriCare dehumidifier with DUAL Inverter, UVnano fan sanitisation and ThinQ Wi-Fi — 1st-grade energy efficiency.",
+    "price": 70,
+    "term": 84,
+    "outright": 3000,
+    "image": "/uploads/products/puricare-dd16gmwe1/main.jpg",
+    "gallery": [
+      "/uploads/products/puricare-dd16gmwe1/gallery-1.jpg",
+      "/uploads/products/puricare-dd16gmwe1/gallery-2.jpg",
+      "/uploads/products/puricare-dd16gmwe1/gallery-3.jpg",
+      "/uploads/products/puricare-dd16gmwe1/gallery-4.jpg"
+    ],
+    "features": [
+      "DUAL Inverter Compressor — 1st-grade energy efficiency",
+      "16L/day capacity (19.08L in Laundry Mode)",
+      "UVnano sanitises the fan blade",
+      "Silent Mode under 32 dB",
+      "LG ThinQ Wi-Fi app control",
+      "4 smart modes: Smart+, Silent, Laundry, Spot",
+      "Hidden handle + cord storage",
+      "Easy-roll casters for room-to-room moves"
+    ],
+    "specs": [
+      {
+        "label": "Dehumidification",
+        "value": "16 L/day"
+      },
+      {
+        "label": "Water Tank",
+        "value": "5.0 L"
+      },
+      {
+        "label": "Power",
+        "value": "252W"
+      },
+      {
+        "label": "Noise",
+        "value": "34 – 40 dB"
+      },
+      {
+        "label": "Dimensions",
+        "value": "410 × 640 × 210 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "15.5 kg"
+      },
+      {
+        "label": "WiFi",
+        "value": "LG ThinQ"
+      },
+      {
+        "label": "Compressor",
+        "value": "Twin Rotary DUAL Inverter"
+      },
+      {
+        "label": "Refrigerant",
+        "value": "R-134a (170 g)"
+      },
+      {
+        "label": "Filter",
+        "value": "Washable pre-filter"
+      },
+      {
+        "label": "Continuous Drain",
+        "value": "Yes"
+      },
+      {
+        "label": "Colour",
+        "value": "Essence White"
+      }
+    ],
+    "heroDescription": "The DD16GMWE1 pulls 16 litres of moisture from your home each day with DUAL Inverter efficiency — quietly. UVnano sanitises the fan blade as it runs, and four smart modes target whole rooms, laundry, or specific damp spots.",
+    "sections": [
+      {
+        "heading": "DUAL Inverter Compressor",
+        "body": "Variable-speed compression runs only as hard as it needs to — quieter, more efficient, longer-lasting than fixed-speed dehumidifiers.",
+        "image": "/uploads/products/puricare-dd16gmwe1/gallery-2.jpg"
+      },
+      {
+        "heading": "UVnano Fan Sanitisation",
+        "body": "A UV LED sterilises the fan blade as the dehumidifier runs, so the air it returns to your room isn't carrying bacteria off the blade.",
+        "image": "/uploads/products/puricare-dd16gmwe1/gallery-3.jpg"
+      },
+      {
+        "heading": "Laundry Mode",
+        "body": "Spot-dries hung laundry indoors during monsoon season — 19L/day pull keeps clothes from mildewing on rainy weeks.",
+        "image": "/uploads/products/puricare-dd16gmwe1/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Dehumidifier unit",
+      "5L water bucket",
+      "Gap-hose (T-hose) for wardrobes",
+      "Y-hose for shoe drying",
+      "Power cord",
+      "User manual"
+    ],
+    "warranty": "2-year unit, 10-year DUAL Inverter compressor",
+    "faqs": [
+      {
+        "q": "Is 16L/day enough for a whole house?",
+        "a": "Comfortably for an apartment or 2–3 bedroom landed home in Malaysian climate. For larger houses, consider running two units or a higher-capacity model."
+      },
+      {
+        "q": "Can I leave it running unattended?",
+        "a": "Yes — auto shut-off when the bucket is full, or hook up the continuous drain hose to a floor drain."
+      },
+      {
+        "q": "How loud is Silent Mode?",
+        "a": "Under 32 dB — quieter than a library."
+      }
+    ],
+    "status": "online",
+    "pricing": [
+      {
+        "monthly": 70,
+        "termMonths": 84,
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 90,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
+      },
+      {
+        "monthly": 90,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
+      }
+    ]
+  },
+  {
+    "slug": "aircon-s3-q120agzb-1-5hp",
+    "category": "air-conditioners",
+    "name": "1.5HP DUALCOOL AI Air Conditioner with Soft Air Mode",
+    "model": "S3-Q120AGZB",
+    "tagline": "Intelligent cooling tuned by AI Air with gentle Soft Air Mode comfort.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/aircon-s3-q120agzb-1-5hp/main.jpg",
+    "gallery": [
+      "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-1.jpg",
+      "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-2.jpg",
+      "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-3.jpg",
+      "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-4.jpg"
+    ],
+    "features": [
+      "AI Air with LG ThinQ integration",
+      "Soft Air Mode for indirect, gentle airflow",
+      "Comfort Humidity Control",
+      "Sleep Timer+ for customised sleep cycles",
+      "kW Manager for proactive energy control",
+      "Window Open Detection",
+      "Auto Clean+ and Freeze Cleaning",
+      "Plasmaster Ionizer++ removes 99.9% of bacteria"
+    ],
+    "specs": [
+      {
+        "label": "Cooling Capacity",
+        "value": "1.5 HP"
+      },
+      {
+        "label": "Compressor",
+        "value": "DUAL Inverter"
+      },
+      {
+        "label": "Refrigerant",
+        "value": "R32"
+      },
+      {
+        "label": "Energy Saving",
+        "value": "Up to 70% vs non-inverter"
+      },
+      {
+        "label": "Cooling Speed",
+        "value": "Up to 40% faster"
+      },
+      {
+        "label": "Filtration",
+        "value": "Pre-Filter + PM 2.5"
+      },
+      {
+        "label": "Self Cleaning",
+        "value": "Auto Clean+, Freeze Cleaning"
+      },
+      {
+        "label": "Air Purification",
+        "value": "Plasmaster Ionizer++"
+      },
+      {
+        "label": "Smart Control",
+        "value": "LG ThinQ app + voice"
+      },
+      {
+        "label": "Modes",
+        "value": "Cool, Fan, Dehumidify, Sleep, Jet"
+      },
+      {
+        "label": "Window Open Detection",
+        "value": "Yes"
+      },
+      {
+        "label": "Warranty",
+        "value": "Covered under Subscribe plan"
+      }
+    ],
+    "heroDescription": "AI Air tracks occupancy and temperature, steering airflow automatically for ideal comfort. Soft Air mode then redirects cool air upward for a gentle indirect breeze while Comfort Humidity Control keeps the room balanced.",
+    "sections": [
+      {
+        "heading": "AI Air that learns your space",
+        "body": "Onboard AI senses occupancy and room temperature, then steers airflow toward or away from you — fewer manual adjustments and a more even climate, without overcooling pockets near the unit.",
+        "image": "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-2.jpg"
+      },
+      {
+        "heading": "Soft Air for gentler comfort",
+        "body": "Once the target temperature is reached, Soft Air redirects cool air upward through micro-holes for indirect circulation. You stay cool without a harsh draft pointed at the bed or sofa.",
+        "image": "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-3.jpg"
+      },
+      {
+        "heading": "Smarter energy with kW Manager",
+        "body": "kW Manager lets you cap power consumption in real time through the ThinQ app, so cooling stays predictable on your bill — with DUAL Inverter efficiency keeping running cost measurably lower.",
+        "image": "/uploads/products/aircon-s3-q120agzb-1-5hp/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Indoor unit",
+      "Outdoor unit",
+      "Remote control with batteries",
+      "Installation manual and user guide",
+      "Warranty card"
+    ],
+    "warranty": "Full unit and compressor warranty managed through your LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "What is the ideal temperature setting?",
+        "a": "25°C is optimal — keeps the room cool while saving energy."
+      },
+      {
+        "q": "How does an inverter differ from a non-inverter AC?",
+        "a": "Inverter models vary compressor speed for efficiency and stable temperature; non-inverter units run at a fixed speed."
+      },
+      {
+        "q": "How often should I clean the filter?",
+        "a": "Rinse the pre-filter with lukewarm water every two weeks and let Auto Clean+ handle internal drying."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "aircon-s3-q2412gzc-2-5hp",
+    "category": "air-conditioners",
+    "name": "2.5HP DUALCOOL AI Air Conditioner with Soft Air Mode",
+    "model": "S3-Q2412GZC",
+    "tagline": "Powerful 2.5HP cooling tuned by AI Air with whisper-quiet Soft Air comfort.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/aircon-s3-q2412gzc-2-5hp/main.jpg",
+    "gallery": [
+      "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-1.jpg",
+      "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-2.jpg",
+      "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-3.jpg",
+      "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-4.jpg"
+    ],
+    "features": [
+      "AI Air with LG ThinQ",
+      "Soft Air Mode indirect airflow",
+      "Comfort Humidity Control",
+      "kW Manager energy control",
+      "Easy Care filtration",
+      "Auto Clean+ self drying",
+      "Freeze Cleaning for the heat exchanger",
+      "Plasmaster Ionizer++ purification"
+    ],
+    "specs": [
+      {
+        "label": "Cooling Capacity",
+        "value": "2.5 HP"
+      },
+      {
+        "label": "Compressor",
+        "value": "DUAL Inverter"
+      },
+      {
+        "label": "Refrigerant",
+        "value": "R32"
+      },
+      {
+        "label": "Modes",
+        "value": "Cool, Fan, Dehumidify"
+      },
+      {
+        "label": "AI Features",
+        "value": "AI Air, Sleep Timer+"
+      },
+      {
+        "label": "Energy Control",
+        "value": "kW Manager"
+      },
+      {
+        "label": "Filtration",
+        "value": "Pre-Filter + PM 2.5"
+      },
+      {
+        "label": "Self Cleaning",
+        "value": "Auto Clean+, Freeze Cleaning"
+      },
+      {
+        "label": "Air Purification",
+        "value": "Plasmaster Ionizer++ (99.9% bacteria)"
+      },
+      {
+        "label": "Smart Control",
+        "value": "LG ThinQ + voice assistants"
+      },
+      {
+        "label": "Sleep Temp Range",
+        "value": "22 — 28°C"
+      },
+      {
+        "label": "Humidity Control",
+        "value": "Automatic"
+      }
+    ],
+    "heroDescription": "AI Air automatically adapts airflow to where you are while DUAL Inverter delivers fast, efficient cooling for larger rooms. Soft Air mode keeps comfort gentle once the target temperature is reached.",
+    "sections": [
+      {
+        "heading": "Built for bigger rooms",
+        "body": "At 2.5HP, this unit is sized for larger living spaces and master bedrooms. DUAL Inverter delivers up to 40% faster cooling and stays efficient once the room reaches your set point, even on long Malaysian afternoons.",
+        "image": "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-2.jpg"
+      },
+      {
+        "heading": "Soft Air, no direct draft",
+        "body": "Soft Air releases cool air upward through fine micro-holes once the room is comfortable. Steady climate without a cold stream pointed at the bed or sofa — ideal for sleeping or working from home.",
+        "image": "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-3.jpg"
+      },
+      {
+        "heading": "Cleaner air, easier maintenance",
+        "body": "Plasmaster Ionizer++ neutralises 99.9% of common bacteria while Auto Clean+ and Freeze Cleaning keep the heat exchanger free from mould and dust between services.",
+        "image": "/uploads/products/aircon-s3-q2412gzc-2-5hp/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Indoor unit",
+      "Outdoor unit",
+      "Remote control with batteries",
+      "Installation accessories",
+      "User manual and warranty card"
+    ],
+    "warranty": "Full unit and compressor warranty covered under the LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "What is the ideal temperature setting?",
+        "a": "25°C keeps the house cool while saving energy."
+      },
+      {
+        "q": "How do I clean the air conditioner?",
+        "a": "Wash the pre-filter every two weeks with lukewarm water and let Auto Clean+ dry the interior automatically."
+      },
+      {
+        "q": "Can I install this myself?",
+        "a": "No — a professional LG engineer must install split-type ACs due to drilling and electrical work."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "puricare-aerohit-as35ggw10",
+    "category": "air-purifiers",
+    "name": "LG PuriCare AeroHit Air Purifier",
+    "model": "AS35GGW10",
+    "tagline": "Slim but powerful 360° purification with H13 HEPA — fits any room.",
+    "price": 45,
+    "term": 84,
+    "outright": 1000,
+    "image": "/uploads/products/puricare-aerohit-as35ggw10/main.jpg",
+    "gallery": [
+      "/uploads/products/puricare-aerohit-as35ggw10/gallery-1.jpg",
+      "/uploads/products/puricare-aerohit-as35ggw10/gallery-2.jpg",
+      "/uploads/products/puricare-aerohit-as35ggw10/gallery-3.jpg",
+      "/uploads/products/puricare-aerohit-as35ggw10/gallery-4.jpg"
+    ],
+    "features": [
+      "360° H Filter for full circular purification",
+      "Slim cylinder shape uses 42% less floor space",
+      "PM 1.0 sensor with real-time air quality readout",
+      "Sleep mode at 25dB",
+      "Multi-layer H13 HEPA filtration",
+      "LED display with touch controls",
+      "Filter replacement reminders",
+      "LG ThinQ app remote control"
+    ],
+    "specs": [
+      {
+        "label": "Coverage Area",
+        "value": "32 m²"
+      },
+      {
+        "label": "CADR",
+        "value": "250 CMH"
+      },
+      {
+        "label": "Filter Grade",
+        "value": "H13 HEPA"
+      },
+      {
+        "label": "Fan Steps",
+        "value": "5 (Auto, Low, Mid, High, Turbo)"
+      },
+      {
+        "label": "Noise Level",
+        "value": "25 — 53 dB"
+      },
+      {
+        "label": "Power Input",
+        "value": "35W"
+      },
+      {
+        "label": "Power Supply",
+        "value": "DC 24V"
+      },
+      {
+        "label": "Motor",
+        "value": "BLDC"
+      },
+      {
+        "label": "Dimensions",
+        "value": "240 × 500 × 240 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "4.2 kg"
+      },
+      {
+        "label": "Display",
+        "value": "LED + Touch"
+      },
+      {
+        "label": "Smart Control",
+        "value": "LG ThinQ app"
+      }
+    ],
+    "heroDescription": "AeroHit slips into tight spaces while purifying 360° around you with a true H13 HEPA filter. A PM 1.0 sensor watches the air in real time and adjusts fan speed automatically.",
+    "sections": [
+      {
+        "heading": "360° clean air",
+        "body": "AeroHit pulls air in from every angle through the cylindrical 360° H Filter, then pushes clean air upward and outward. No front or back — placement is flexible and one unit covers the whole room evenly.",
+        "image": "/uploads/products/puricare-aerohit-as35ggw10/gallery-2.jpg"
+      },
+      {
+        "heading": "Tiny footprint, big result",
+        "body": "At just 240 mm wide, AeroHit takes 42% less floor space than typical purifiers. The clean cylindrical form blends into living rooms or bedrooms without becoming clinical-looking equipment.",
+        "image": "/uploads/products/puricare-aerohit-as35ggw10/gallery-3.jpg"
+      },
+      {
+        "heading": "PM 1.0 sensing that reacts",
+        "body": "A laser PM 1.0 sensor measures ultra-fine particles in real time and shifts the fan automatically. Sleep mode drops to 25dB at night; Turbo handles cooking, haze or sudden dust without touching the controls.",
+        "image": "/uploads/products/puricare-aerohit-as35ggw10/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "LG PuriCare AeroHit unit",
+      "Aero Series H Filter (pre-installed)",
+      "Power adapter",
+      "User manual",
+      "Warranty card"
+    ],
+    "warranty": "Full unit warranty managed under the LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "Does it remove dust, smells and mould spores?",
+        "a": "Yes — the multi-layer HEPA system captures fine particles, odours, viruses and bacteria."
+      },
+      {
+        "q": "How often should I replace the filter?",
+        "a": "Roughly once a year based on 10 hours of daily use, depending on environment."
+      },
+      {
+        "q": "Where should I place it?",
+        "a": "At least one metre from walls, out of direct sunlight, in 40-70% humidity for best performance."
+      }
+    ],
+    "status": "online",
+    "pricing": [
+      {
+        "monthly": 45,
+        "termMonths": 84,
+        "planName": "7 Years Self-Service"
+      },
+      {
+        "monthly": 65,
+        "termMonths": 84,
+        "planName": "7 Years Regular Visit"
+      },
+      {
+        "monthly": 75,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      },
+      {
+        "monthly": 95,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit"
+      }
+    ]
+  },
+  {
+    "slug": "ultragear-27g640a",
+    "category": "monitors",
+    "name": "LG UltraGear 27\" QHD IPS Gaming Monitor 300Hz",
+    "model": "27G640A-B",
+    "tagline": "QHD clarity at 300Hz with 1ms response — competitive motion without compromise.",
+    "price": null,
+    "term": null,
+    "outright": 1399,
+    "image": "/uploads/products/ultragear-27g640a/main.jpg",
+    "gallery": [
+      "/uploads/products/ultragear-27g640a/gallery-1.jpg",
+      "/uploads/products/ultragear-27g640a/gallery-2.jpg",
+      "/uploads/products/ultragear-27g640a/gallery-3.jpg",
+      "/uploads/products/ultragear-27g640a/gallery-4.jpg"
+    ],
+    "features": [
+      "300Hz refresh rate for fluid motion",
+      "1ms GtG response in Faster mode",
+      "DisplayHDR 400 with 95% DCI-P3",
+      "NVIDIA G-SYNC Compatible",
+      "AMD FreeSync Premium",
+      "Dynamic Action Sync for low input lag",
+      "Black Stabilizer for dark-scene visibility",
+      "Tilt, swivel, pivot and height-adjustable stand"
+    ],
+    "specs": [
+      {
+        "label": "Display Size",
+        "value": "27 inches"
+      },
+      {
+        "label": "Resolution",
+        "value": "2560 × 1440 QHD"
+      },
+      {
+        "label": "Panel",
+        "value": "IPS"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "300Hz"
+      },
+      {
+        "label": "Response Time",
+        "value": "1ms GtG"
+      },
+      {
+        "label": "Colour Gamut",
+        "value": "DCI-P3 95%"
+      },
+      {
+        "label": "HDR",
+        "value": "DisplayHDR 400"
+      },
+      {
+        "label": "Brightness",
+        "value": "400 cd/m²"
+      },
+      {
+        "label": "Contrast",
+        "value": "1300:1"
+      },
+      {
+        "label": "Ports",
+        "value": "2× HDMI 2.1, DP 1.4, USB-C 15W PD"
+      },
+      {
+        "label": "Power",
+        "value": "45W typical"
+      },
+      {
+        "label": "Weight",
+        "value": "5.47 kg with stand"
+      }
+    ],
+    "heroDescription": "A 27-inch QHD IPS panel runs at 300Hz with 1ms response for fast, fluid play. DisplayHDR 400 and 95% DCI-P3 deliver vivid colour without losing competitive clarity.",
+    "sections": [
+      {
+        "heading": "300Hz where it counts",
+        "body": "A native 300Hz QHD IPS panel gives shooters and arena players esports-grade motion smoothness without dropping to 1080p. With 1ms GtG, flick aims stay sharp instead of smearing.",
+        "image": "/uploads/products/ultragear-27g640a/gallery-2.jpg"
+      },
+      {
+        "heading": "Colour built for HDR play",
+        "body": "With 95% DCI-P3 coverage and DisplayHDR 400, highlights pop and shadows hold detail. The same panel works for creative work between matches — no second monitor needed.",
+        "image": "/uploads/products/ultragear-27g640a/gallery-3.jpg"
+      },
+      {
+        "heading": "Sync from any GPU",
+        "body": "NVIDIA G-SYNC Compatible and AMD FreeSync Premium both work out of the box — tearing is gone whichever card you run. Dynamic Action Sync and Black Stabilizer further reduce input lag and lift visibility in shadows.",
+        "image": "/uploads/products/ultragear-27g640a/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "27G640A-B monitor",
+      "Stand base and arm",
+      "Power cable",
+      "DisplayPort cable",
+      "Quick start guide and warranty card"
+    ],
+    "warranty": "Monitor warranty managed through the LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "Will 300Hz work over HDMI?",
+        "a": "Use DisplayPort 1.4 or HDMI 2.1 with a compatible GPU to reach the full 300Hz at QHD."
+      },
+      {
+        "q": "Is it G-SYNC and FreeSync compatible?",
+        "a": "Yes — NVIDIA G-SYNC Compatible and AMD FreeSync Premium."
+      },
+      {
+        "q": "Can I mount it on a wall?",
+        "a": "Yes — standard VESA mount supported; see the user guide for the pattern."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "ultragear-oled-27gx790a",
+    "category": "monitors",
+    "name": "LG UltraGear 27\" OLED QHD Gaming Monitor 480Hz",
+    "model": "27GX790A-B",
+    "tagline": "Fastest 480Hz OLED with DisplayPort 2.1 and ClearMR 21000 motion clarity.",
+    "price": 120,
+    "term": 60,
+    "outright": 4499,
+    "image": "/uploads/products/ultragear-oled-27gx790a/main.jpg",
+    "gallery": [
+      "/uploads/products/ultragear-oled-27gx790a/gallery-1.jpg",
+      "/uploads/products/ultragear-oled-27gx790a/gallery-2.jpg",
+      "/uploads/products/ultragear-oled-27gx790a/gallery-3.jpg",
+      "/uploads/products/ultragear-oled-27gx790a/gallery-4.jpg"
+    ],
+    "features": [
+      "480Hz OLED refresh rate",
+      "0.03ms GtG response time",
+      "DisplayPort 2.1 for next-gen GPUs",
+      "Micro Lens Array+ with 1300 nits peak",
+      "DisplayHDR True Black 400",
+      "VESA ClearMR 21000 certified",
+      "Anti-glare low-reflection coating",
+      "G-SYNC Compatible and FreeSync Premium Pro"
+    ],
+    "specs": [
+      {
+        "label": "Display Size",
+        "value": "26.5 inches"
+      },
+      {
+        "label": "Resolution",
+        "value": "2560 × 1440 QHD"
+      },
+      {
+        "label": "Panel",
+        "value": "OLED"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "480Hz"
+      },
+      {
+        "label": "Response Time",
+        "value": "0.03ms GtG"
+      },
+      {
+        "label": "Colour Gamut",
+        "value": "DCI-P3 98.5%"
+      },
+      {
+        "label": "Brightness",
+        "value": "275 cd/m² typical, 1300 nits peak"
+      },
+      {
+        "label": "Contrast",
+        "value": "1,500,000:1"
+      },
+      {
+        "label": "DisplayPort",
+        "value": "2.1"
+      },
+      {
+        "label": "HDMI",
+        "value": "2× HDMI 2.1"
+      },
+      {
+        "label": "Stand",
+        "value": "Tilt, height, swivel, pivot"
+      },
+      {
+        "label": "VESA Mount",
+        "value": "100 × 100 mm"
+      }
+    ],
+    "heroDescription": "A QHD OLED panel runs at a blistering 480Hz with 0.03ms response for ghost-free competitive gameplay. Micro Lens Array+ pushes peak brightness to 1300 nits with DisplayHDR True Black 400.",
+    "sections": [
+      {
+        "heading": "480Hz on OLED, finally",
+        "body": "The fastest OLED LG has shipped — doubling typical 240Hz into a smoother 480Hz window. With 0.03ms response and self-lit pixels, fast pans and flick aims stay clean with no smear.",
+        "image": "/uploads/products/ultragear-oled-27gx790a/gallery-2.jpg"
+      },
+      {
+        "heading": "DP 2.1 future-ready",
+        "body": "DisplayPort 2.1 lets next-generation GPUs feed the panel uncompressed at high refresh — removing the bandwidth ceiling older monitors hit. HDMI 2.1 ports keep current consoles and PCs covered.",
+        "image": "/uploads/products/ultragear-oled-27gx790a/gallery-3.jpg"
+      },
+      {
+        "heading": "Brighter OLED with MLA+",
+        "body": "Micro Lens Array+ lifts peak brightness to 1300 nits and earns DisplayHDR True Black 400. Highlights and explosions punch through in well-lit rooms where older OLED gaming monitors looked dim.",
+        "image": "/uploads/products/ultragear-oled-27gx790a/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "27GX790A-B monitor",
+      "Stand base and arm",
+      "DisplayPort 2.1 cable",
+      "HDMI 2.1 cable",
+      "USB A-to-B cable",
+      "Power adapter",
+      "Documentation"
+    ],
+    "warranty": "Monitor and OLED panel covered under the LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "Do I need a special cable for 480Hz?",
+        "a": "Use the bundled DisplayPort 2.1 cable with a DP 2.1 capable GPU to reach full 480Hz."
+      },
+      {
+        "q": "Is OLED burn-in a concern?",
+        "a": "LG includes pixel refresh and screen move features to reduce the risk during long sessions."
+      },
+      {
+        "q": "Does it support consoles?",
+        "a": "Yes — dual HDMI 2.1 ports support PS5 and Xbox Series X at high refresh."
+      }
+    ],
+    "status": "online",
+    "pricing": [
+      {
+        "monthly": 120,
+        "termMonths": 60,
+        "planName": "5 Years Self-Service"
+      }
+    ]
+  },
+  {
+    "slug": "ultrafine-27us500",
+    "category": "monitors",
+    "name": "LG UltraFine 27\" UHD 4K IPS Monitor",
+    "model": "27US500-W",
+    "tagline": "Sharp 4K UHD IPS with HDR10 and 90% DCI-P3 — for everyday creators.",
+    "price": null,
+    "term": null,
+    "outright": 899,
+    "image": "/uploads/products/ultrafine-27us500/main.jpg",
+    "gallery": [
+      "/uploads/products/ultrafine-27us500/gallery-1.jpg",
+      "/uploads/products/ultrafine-27us500/gallery-2.jpg",
+      "/uploads/products/ultrafine-27us500/gallery-3.jpg",
+      "/uploads/products/ultrafine-27us500/gallery-4.jpg"
+    ],
+    "features": [
+      "27-inch UHD 4K IPS panel",
+      "HDR10 support",
+      "DCI-P3 90% colour gamut",
+      "300 nits brightness",
+      "Three-side borderless design",
+      "LG Switch app for window layouts and hotkeys",
+      "AirPlay 2 and Screen Share",
+      "Bluetooth audio pairing"
+    ],
+    "specs": [
+      {
+        "label": "Display Size",
+        "value": "27 inches"
+      },
+      {
+        "label": "Resolution",
+        "value": "3840 × 2160 UHD 4K"
+      },
+      {
+        "label": "Panel",
+        "value": "IPS"
+      },
+      {
+        "label": "Colour Gamut",
+        "value": "DCI-P3 90%"
+      },
+      {
+        "label": "Brightness",
+        "value": "300 cd/m² typical"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "60 Hz"
+      },
+      {
+        "label": "Response Time",
+        "value": "5ms GtG Faster"
+      },
+      {
+        "label": "Contrast",
+        "value": "1000:1 typical"
+      },
+      {
+        "label": "HDR",
+        "value": "HDR10"
+      },
+      {
+        "label": "Ports",
+        "value": "2× HDMI, 1× DisplayPort 1.4"
+      },
+      {
+        "label": "Dimensions with stand",
+        "value": "613.5 × 454.7 × 214.9 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "5.5 kg"
+      }
+    ],
+    "heroDescription": "A 27-inch UltraFine 4K UHD IPS panel delivers 90% DCI-P3 colour and HDR10 in a slim three-side borderless design. AirPlay 2 and Screen Share let you mirror from a Mac, iPhone or compatible device without cables.",
+    "sections": [
+      {
+        "heading": "4K UHD clarity",
+        "body": "Four times the pixels of Full HD pack into a 27-inch IPS panel — text stays razor-sharp and creative work shows real detail. Wide IPS viewing angles keep colour consistent from any seat at the desk.",
+        "image": "/uploads/products/ultrafine-27us500/gallery-2.jpg"
+      },
+      {
+        "heading": "Colour creators can trust",
+        "body": "With 90% DCI-P3 coverage and HDR10 support, photo and video editors get a wider, more cinema-accurate palette than typical sRGB office screens.",
+        "image": "/uploads/products/ultrafine-27us500/gallery-3.jpg"
+      },
+      {
+        "heading": "Wireless sharing built in",
+        "body": "AirPlay 2 and Screen Share let an iPhone, iPad or Mac mirror straight to the panel without dongles. The LG Switch app then handles window snapping and hotkeys.",
+        "image": "/uploads/products/ultrafine-27us500/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "27US500-W monitor",
+      "Stand body and base",
+      "Mounting screws",
+      "Power adapter",
+      "HDMI cable",
+      "Quick start guide",
+      "Warranty card"
+    ],
+    "warranty": "Monitor warranty managed through the LG Subscribe plan.",
+    "faqs": [
+      {
+        "q": "Does it run 4K at 60Hz over HDMI?",
+        "a": "Yes — both HDMI ports and DisplayPort 1.4 support 4K at 60Hz."
+      },
+      {
+        "q": "Can I use it with a MacBook?",
+        "a": "Yes — and AirPlay 2 also lets you mirror wirelessly from compatible Apple devices."
+      },
+      {
+        "q": "Is the stand height-adjustable?",
+        "a": "The stand supports tilt adjustment; see the user guide for full ergonomics details."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "fridge-top-freezer-547l",
+    "category": "refrigerators",
+    "name": "LG 547L Top Freezer Refrigerator with Smart Inverter Compressor",
+    "model": "GN-C702HQCM",
+    "tagline": "547L top-mount fridge with Smart Inverter, DoorCooling and LinearCooling for fresher food.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/fridge-top-freezer-547l/main.jpg",
+    "gallery": [
+      "/uploads/products/fridge-top-freezer-547l/gallery-1.jpg",
+      "/uploads/products/fridge-top-freezer-547l/gallery-2.jpg",
+      "/uploads/products/fridge-top-freezer-547l/gallery-3.jpg",
+      "/uploads/products/fridge-top-freezer-547l/gallery-4.jpg"
+    ],
+    "features": [
+      "Smart Inverter Compressor for energy-efficient, quiet cooling",
+      "DoorCooling cools 35% faster than conventional systems",
+      "Multi Air Flow distributes cold air to every corner",
+      "LinearCooling holds temperature within ±0.5°C",
+      "Moving Ice Tray for easy ice access",
+      "Trimless tempered-glass shelves resist heavy loads",
+      "LED Panel Lighting for clear, bright interior",
+      "Smart Diagnosis troubleshoots via smartphone"
+    ],
+    "specs": [
+      {
+        "label": "Total Capacity",
+        "value": "547L"
+      },
+      {
+        "label": "Dimensions (W×H×D)",
+        "value": "780 × 1800 × 730 mm"
+      },
+      {
+        "label": "Product Weight",
+        "value": "79 kg"
+      },
+      {
+        "label": "Energy Rating",
+        "value": "4 Star"
+      },
+      {
+        "label": "Energy Consumption",
+        "value": "413 kWh/year"
+      },
+      {
+        "label": "Colour",
+        "value": "Essence Matte Black"
+      },
+      {
+        "label": "Compressor",
+        "value": "Smart Inverter Compressor (BLDC)"
+      },
+      {
+        "label": "Door Material",
+        "value": "PCM"
+      },
+      {
+        "label": "Refrigerator Shelves",
+        "value": "3 tempered glass"
+      },
+      {
+        "label": "Freezer Shelves",
+        "value": "1 tempered glass"
+      },
+      {
+        "label": "Vegetable Box",
+        "value": "Yes (1)"
+      },
+      {
+        "label": "Cooling Type",
+        "value": "Multi Air Flow + DoorCooling"
+      }
+    ],
+    "heroDescription": "A spacious 547L top-mount refrigerator powered by LG's Smart Inverter Compressor for whisper-quiet, energy-efficient cooling. DoorCooling and Multi Air Flow keep temperatures consistent so food stays fresher, longer.",
+    "sections": [
+      {
+        "heading": "Smart Inverter Compressor",
+        "body": "LG's BLDC Smart Inverter adapts cooling power to load, slashing energy use and noise. The result is whisper-quiet operation, less wear, and reliable performance backed by a 10-year compressor warranty.",
+        "image": "/uploads/products/fridge-top-freezer-547l/gallery-2.jpg"
+      },
+      {
+        "heading": "DoorCooling Technology",
+        "body": "Targeted vents on the door push chilled air across every shelf, cooling the cabinet up to 35% faster than conventional systems. Frequent door openings no longer warm the food at the front.",
+        "image": "/uploads/products/fridge-top-freezer-547l/gallery-3.jpg"
+      },
+      {
+        "heading": "LinearCooling and Multi Air Flow",
+        "body": "Multi Air Flow circulates cold air through multiple vents while LinearCooling holds temperature within ±0.5°C. Together they reduce moisture loss so produce and leftovers stay fresh days longer.",
+        "image": "/uploads/products/fridge-top-freezer-547l/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Refrigerator unit",
+      "Ice tray",
+      "User manual",
+      "Warranty card"
+    ],
+    "warranty": "10-year warranty on Smart Inverter Compressor (parts only).",
+    "faqs": [
+      {
+        "q": "What is LG LinearCooling?",
+        "a": "LinearCooling keeps interior temperature steady within ±0.5°C by precisely controlling cold air delivery, reducing moisture loss and keeping food fresher longer."
+      },
+      {
+        "q": "How do I change the temperature setting?",
+        "a": "Use the control panel on the door or inside the fridge; supported models also allow remote control via the LG ThinQ app."
+      },
+      {
+        "q": "What size fridge do I need?",
+        "a": "547L suits a family of 4-6 comfortably, with ample fresh-food and freezer storage for weekly grocery hauls."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "styler-s3ghm",
+    "category": "styler",
+    "name": "LG Styler S3GHM Smart Wardrobe with TrueSteam",
+    "model": "S3GHM",
+    "tagline": "Smart steam wardrobe — refreshes, deodorises and de-wrinkles clothes without water or detergent.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/styler-s3ghm/main.jpg",
+    "gallery": [
+      "/uploads/products/styler-s3ghm/gallery-1.jpg",
+      "/uploads/products/styler-s3ghm/gallery-2.jpg",
+      "/uploads/products/styler-s3ghm/gallery-3.jpg",
+      "/uploads/products/styler-s3ghm/gallery-4.jpg"
+    ],
+    "features": [
+      "TrueSteam refreshes and deodorises without detergent",
+      "Moving Hanger swings at up to 180 RPM to shake out wrinkles",
+      "Sanitary cycle reduces allergens and bacteria",
+      "Ventless Inverter HeatPump dries gently and efficiently",
+      "ThinQ Wi-Fi for remote start and downloadable cycles",
+      "Mirror Glass door doubles as a dressing mirror",
+      "Aroma Kit infuses garments with a light scent",
+      "Night Care mode runs quietly for overnight care"
+    ],
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "3 garments"
+      },
+      {
+        "label": "Dimensions (W×H×D)",
+        "value": "445 × 1850 × 585 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "73 kg"
+      },
+      {
+        "label": "Door Finish",
+        "value": "Mirror Glass"
+      },
+      {
+        "label": "Drying System",
+        "value": "Ventless Inverter HeatPump"
+      },
+      {
+        "label": "Display",
+        "value": "Full Touch + LED"
+      },
+      {
+        "label": "Programs",
+        "value": "Refresh, Sanitary, Wool/Knit, Downloaded"
+      },
+      {
+        "label": "Smart",
+        "value": "ThinQ Wi-Fi, Remote Start, Smart Diagnosis"
+      },
+      {
+        "label": "Delay Timer",
+        "value": "3 — 19 hours"
+      },
+      {
+        "label": "Moving Hanger",
+        "value": "Up to 180 RPM"
+      },
+      {
+        "label": "Aroma Kit",
+        "value": "Yes"
+      },
+      {
+        "label": "Child Lock",
+        "value": "Yes"
+      }
+    ],
+    "heroDescription": "LG Styler is a steam-powered smart wardrobe that refreshes, deodorises and reduces wrinkles between washes. TrueSteam and a Moving Hanger gently care for suits, knits and delicates while reducing common household allergens.",
+    "sections": [
+      {
+        "heading": "TrueSteam Refresh",
+        "body": "Pure heated steam penetrates fibres to lift odours, relax wrinkles and sanitise without chemicals. Suits, school uniforms and delicates come out fresh, dry and ready to wear in under an hour.",
+        "image": "/uploads/products/styler-s3ghm/gallery-2.jpg"
+      },
+      {
+        "heading": "Moving Hanger Action",
+        "body": "The Moving Hanger oscillates up to 180 times per minute, gently shaking garments while steam works through the fabric. The motion releases creases and dust without the wear of ironing or laundering.",
+        "image": "/uploads/products/styler-s3ghm/gallery-3.jpg"
+      },
+      {
+        "heading": "ThinQ Smart Care",
+        "body": "Start cycles, monitor progress and download specialist programs straight from your phone via LG ThinQ. Smart Diagnosis flags maintenance needs so the Styler stays effective with minimal effort.",
+        "image": "/uploads/products/styler-s3ghm/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "LG Styler unit",
+      "2 Regular Hangers",
+      "Anti-Tip Kit",
+      "Rear Leveling Feet",
+      "Aroma Kit"
+    ],
+    "warranty": "Standard LG Styler warranty applies; refer to LG Malaysia warranty terms.",
+    "faqs": [
+      {
+        "q": "What kinds of garments can the Styler handle?",
+        "a": "Suits, shirts, coats, wool, knits, sportswear, school uniforms and select bedding; downloaded cycles tailor care for specific fabric types."
+      },
+      {
+        "q": "Can I control the Styler remotely?",
+        "a": "Yes — ThinQ Wi-Fi lets you start cycles, schedule runs, monitor energy use and download new programs from your smartphone."
+      },
+      {
+        "q": "How does Styler reduce allergens?",
+        "a": "TrueSteam reaches deep into fibres to kill dust mites and bacteria; the Sanitary cycle is designed specifically to reduce common household allergens."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "qned91-75",
+    "category": "televisions",
+    "name": "LG 75\" QNED91 4K Mini-LED Smart TV (2024)",
+    "model": "75QNED91TSA",
+    "tagline": "75\" QNED Mini-LED 4K TV with α8 AI Processor, 120Hz, Dolby Vision and Atmos.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/qned91-75/main.jpg",
+    "gallery": [
+      "/uploads/products/qned91-75/gallery-1.jpg",
+      "/uploads/products/qned91-75/gallery-2.jpg",
+      "/uploads/products/qned91-75/gallery-3.jpg",
+      "/uploads/products/qned91-75/gallery-4.jpg"
+    ],
+    "features": [
+      "QNED Color Pro for a rich, vibrant palette",
+      "α8 AI Processor 4K optimises picture and sound",
+      "Precision Dimming Mini-LED backlight for deep contrast",
+      "120Hz native panel for smooth motion",
+      "Dolby Vision, Dolby Atmos and Filmmaker Mode",
+      "Game Optimizer with VRR and ALLM",
+      "webOS 24 with Magic Remote MR24",
+      "webOS Re:New: 4 years of upgrades over 5 years"
+    ],
+    "specs": [
+      {
+        "label": "Screen Size",
+        "value": "75-inch"
+      },
+      {
+        "label": "Resolution",
+        "value": "4K UHD 3840 × 2160"
+      },
+      {
+        "label": "Display",
+        "value": "QNED Mini-LED"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "120Hz native"
+      },
+      {
+        "label": "Processor",
+        "value": "α8 AI Processor 4K"
+      },
+      {
+        "label": "HDR",
+        "value": "Dolby Vision / HDR10 / HLG"
+      },
+      {
+        "label": "Audio",
+        "value": "40W 2.2ch with Dolby Atmos"
+      },
+      {
+        "label": "HDMI",
+        "value": "4 ports (4K@120Hz, eARC, VRR, ALLM)"
+      },
+      {
+        "label": "Dimensions (no stand)",
+        "value": "1673 × 963 × 44.9 mm"
+      },
+      {
+        "label": "Weight (no stand)",
+        "value": "41.9 kg"
+      },
+      {
+        "label": "OS",
+        "value": "webOS 24"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 5, Bluetooth 5.1, Ethernet, USB"
+      }
+    ],
+    "heroDescription": "A 75-inch QNED Mini-LED 4K TV with quantum dot colour and Precision Dimming for cinematic contrast. The α8 AI Processor 4K, 120Hz panel, Dolby Vision and Dolby Atmos deliver a premium living-room experience.",
+    "sections": [
+      {
+        "heading": "α8 AI Processor 4K",
+        "body": "LG's α8 chip applies AI upscaling, dynamic tone mapping and genre-aware tuning to every frame — sharper detail, deeper blacks and balanced audio across movies, sports and games.",
+        "image": "/uploads/products/qned91-75/gallery-2.jpg"
+      },
+      {
+        "heading": "Precision Dimming Mini-LED",
+        "body": "Thousands of Mini-LED zones drive Precision Dimming for crisp highlights and inky shadows. QNED Color Pro adds a wide quantum-dot gamut, producing vivid, accurate hues true to creator intent.",
+        "image": "/uploads/products/qned91-75/gallery-3.jpg"
+      },
+      {
+        "heading": "webOS Re:New Upgrades",
+        "body": "The webOS Re:New Program guarantees four major software upgrades over five years. Your TV keeps gaining new apps, AI features and security updates long after unboxing.",
+        "image": "/uploads/products/qned91-75/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "TV with stand",
+      "Magic Remote MR24",
+      "Power cable",
+      "Remote batteries (AA × 2)",
+      "Quick start guide"
+    ],
+    "warranty": "Standard LG TV warranty applies; refer to LG Malaysia warranty terms.",
+    "faqs": [
+      {
+        "q": "What sets QNED91 apart from a standard LED TV?",
+        "a": "It combines Mini-LED backlighting with quantum dot colour and the α8 AI Processor — deeper contrast, wider colour and smoother motion than conventional LED panels."
+      },
+      {
+        "q": "Is it good for gaming?",
+        "a": "Yes — 120Hz panel supports VRR, ALLM, and HGiG, and Game Optimizer offers a dedicated dashboard for tuning gaming visuals quickly."
+      },
+      {
+        "q": "What smart features are included?",
+        "a": "webOS 24 with Magic Remote, AirPlay 2, ThinQ integration, voice control, multi-view, and built-in Netflix, Disney+ and Apple TV+."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "uhd-ur75-75",
+    "category": "televisions",
+    "name": "LG 75\" UR75 4K UHD Smart TV (2023)",
+    "model": "75UR7550PSC",
+    "tagline": "75\" 4K UHD TV with α5 AI Gen6 processor, HDR10 Pro and webOS smart platform.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/uhd-ur75-75/main.jpg",
+    "gallery": [
+      "/uploads/products/uhd-ur75-75/gallery-1.jpg",
+      "/uploads/products/uhd-ur75-75/gallery-2.jpg",
+      "/uploads/products/uhd-ur75-75/gallery-3.jpg",
+      "/uploads/products/uhd-ur75-75/gallery-4.jpg"
+    ],
+    "features": [
+      "4K UHD with HDR10 Pro and HLG",
+      "α5 AI Processor 4K Gen6 for AI upscaling",
+      "AI Brightness Control adapts to room lighting",
+      "Filmmaker Mode for creator-intent viewing",
+      "Game Optimizer with HGiG and ALLM",
+      "webOS 23 with Magic Remote",
+      "Built-in Netflix, Disney+, Apple TV+, LG Channels",
+      "Apple AirPlay 2, HomeKit and Matter support"
+    ],
+    "specs": [
+      {
+        "label": "Screen Size",
+        "value": "75-inch"
+      },
+      {
+        "label": "Resolution",
+        "value": "4K UHD 3840 × 2160"
+      },
+      {
+        "label": "Processor",
+        "value": "α5 AI Processor 4K Gen6"
+      },
+      {
+        "label": "HDR",
+        "value": "HDR10 Pro, HLG"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "60Hz native"
+      },
+      {
+        "label": "HDMI",
+        "value": "3 ports (HDMI 2.1, eARC on HDMI 2)"
+      },
+      {
+        "label": "Audio",
+        "value": "20W 2.0ch"
+      },
+      {
+        "label": "Dimensions (no stand)",
+        "value": "1678 × 964 × 59.9 mm"
+      },
+      {
+        "label": "Weight (no stand)",
+        "value": "31.4 kg"
+      },
+      {
+        "label": "OS",
+        "value": "webOS 23"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 5, Bluetooth 5.0, Ethernet, USB 2.0 × 2"
+      },
+      {
+        "label": "VESA Mount",
+        "value": "400 × 400 mm"
+      }
+    ],
+    "heroDescription": "A big-screen 75-inch 4K UHD TV that pairs HDR10 Pro with LG's α5 AI Processor 4K Gen6 for vivid colour and crisp detail. webOS 23 brings major streaming apps, voice control and smart-home integration to one home screen.",
+    "sections": [
+      {
+        "heading": "α5 AI Processor 4K Gen6",
+        "body": "LG's α5 Gen6 chip enhances every frame through AI upscaling, dynamic contrast and sound tuning. Lower-resolution content looks near-4K, while sharpness and colour stay balanced across all sources.",
+        "image": "/uploads/products/uhd-ur75-75/gallery-2.jpg"
+      },
+      {
+        "heading": "AI Brightness Control",
+        "body": "Built-in sensors read room lighting and adjust panel brightness automatically — comfortable viewing whether it's a sunny afternoon or dim evening, without manually tweaking picture settings.",
+        "image": "/uploads/products/uhd-ur75-75/gallery-3.jpg"
+      },
+      {
+        "heading": "webOS 23 and Smart Home",
+        "body": "webOS 23 puts Netflix, Disney+, Apple TV+ and LG Channels on the home screen. AirPlay 2, HomeKit, Matter and ThinQ tie the TV into a wider smart-home ecosystem with voice control.",
+        "image": "/uploads/products/uhd-ur75-75/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "TV with stand",
+      "Magic Remote",
+      "Power cable",
+      "Remote batteries (AA × 2)",
+      "Quick start guide"
+    ],
+    "warranty": "Standard LG TV warranty applies; refer to LG Malaysia warranty terms.",
+    "faqs": [
+      {
+        "q": "What is the α5 AI Processor 4K Gen6?",
+        "a": "It is LG's mid-range AI chip that upscales non-4K content towards 4K clarity and uses AI Brightness Control to adapt the picture to ambient lighting."
+      },
+      {
+        "q": "Does this TV support gaming?",
+        "a": "Yes — Game Optimizer includes a quick-access dashboard, HGiG mode, ALLM via HDMI, and supports cloud gaming through GeForce NOW."
+      },
+      {
+        "q": "Which streaming services are built in?",
+        "a": "Netflix, Disney+, Apple TV+, LG Channels and many more arrive pre-installed on webOS 23, with a full browser for additional services."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "uhd-ut90-75",
+    "category": "televisions",
+    "name": "LG 75\" UT90 4K UHD AI Smart TV (2024)",
+    "model": "75UT9050PSB",
+    "tagline": "Slim 75\" 4K UHD AI TV with α5 Gen7 processor, local dimming and webOS 24.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/uhd-ut90-75/main.jpg",
+    "gallery": [
+      "/uploads/products/uhd-ut90-75/gallery-1.jpg",
+      "/uploads/products/uhd-ut90-75/gallery-2.jpg",
+      "/uploads/products/uhd-ut90-75/gallery-3.jpg",
+      "/uploads/products/uhd-ut90-75/gallery-4.jpg"
+    ],
+    "features": [
+      "4K UHD with HDR10 and HLG",
+      "α5 AI Processor 4K Gen7 for smarter upscaling",
+      "Local dimming for deeper contrast",
+      "Filmmaker Mode for cinema-accurate picture",
+      "AI Sound Pro with virtual 9.1.2 upmix",
+      "webOS 24 with LG ThinQ",
+      "Super-slim 30.9 mm depth",
+      "webOS Re:New: 4 years of upgrades over 5 years"
+    ],
+    "specs": [
+      {
+        "label": "Screen Size",
+        "value": "75-inch"
+      },
+      {
+        "label": "Resolution",
+        "value": "4K UHD 3840 × 2160"
+      },
+      {
+        "label": "Processor",
+        "value": "α5 AI Processor 4K Gen7"
+      },
+      {
+        "label": "HDR",
+        "value": "HDR10 / HLG"
+      },
+      {
+        "label": "Refresh Rate",
+        "value": "60Hz native"
+      },
+      {
+        "label": "Backlight",
+        "value": "Edge with Local Dimming"
+      },
+      {
+        "label": "Audio",
+        "value": "20W 2.0ch with AI Sound Pro"
+      },
+      {
+        "label": "HDMI",
+        "value": "3 ports with eARC"
+      },
+      {
+        "label": "Dimensions (no stand)",
+        "value": "1677 × 965 × 30.9 mm"
+      },
+      {
+        "label": "Weight (no stand)",
+        "value": "33.0 kg"
+      },
+      {
+        "label": "OS",
+        "value": "webOS 24"
+      },
+      {
+        "label": "Smart",
+        "value": "LG ThinQ, AirPlay 2, voice control"
+      }
+    ],
+    "heroDescription": "A 75-inch 4K UHD TV powered by the α5 AI Processor 4K Gen7 with local dimming for deeper contrast. A super-slim 30.9 mm profile and webOS 24 with the Re:New Program keep it elegant and future-ready.",
+    "sections": [
+      {
+        "heading": "α5 AI Processor 4K Gen7",
+        "body": "The new Gen7 chip drives AI upscaling, dynamic tone mapping and adaptive brightness so every source looks its best. Picture and sound continuously self-tune to content and room conditions.",
+        "image": "/uploads/products/uhd-ut90-75/gallery-2.jpg"
+      },
+      {
+        "heading": "Local Dimming Contrast",
+        "body": "Edge local dimming brightens highlights and deepens blacks across the panel. Combined with Filmmaker Mode, dark scenes retain detail and colour grading stays faithful to creator intent.",
+        "image": "/uploads/products/uhd-ut90-75/gallery-3.jpg"
+      },
+      {
+        "heading": "webOS 24 with Re:New",
+        "body": "webOS 24 streamlines streaming, voice search and smart-home control via ThinQ. The Re:New Program guarantees four years of upgrades over five.",
+        "image": "/uploads/products/uhd-ut90-75/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "TV with stand",
+      "Magic Remote MR24",
+      "Detachable power cable",
+      "Remote batteries (AA × 2)",
+      "Quick start guide"
+    ],
+    "warranty": "Standard LG TV warranty applies; refer to LG Malaysia warranty terms.",
+    "faqs": [
+      {
+        "q": "What makes the UT90 different from other UHD TVs?",
+        "a": "It pairs the α5 AI Processor 4K Gen7 with local dimming and Filmmaker Mode — stronger contrast and more accurate colour than entry-level 4K UHD sets."
+      },
+      {
+        "q": "Does this TV support gaming?",
+        "a": "Yes — Game Optimizer includes a dashboard, HGiG mode for HDR gaming and Auto Low Latency Mode via HDMI for responsive play."
+      },
+      {
+        "q": "What smart features are included?",
+        "a": "webOS 24 with LG ThinQ, Apple AirPlay 2, voice recognition, a full web browser and Room to Room Share for streaming between compatible LG devices."
+      }
+    ],
+    "status": "online"
+  },
+  {
+    "slug": "front-loader-fb1209s5w-9kg",
+    "category": "washer-dryers",
+    "name": "LG 9kg Front Load Washer with 6 Motion Inverter Direct Drive",
+    "model": "FB1209S5W",
+    "tagline": "9kg front load washer with 6 Motion DD, Steam allergy care and removable top for built-in fit.",
+    "price": null,
+    "term": null,
+    "outright": null,
+    "image": "/uploads/products/front-loader-fb1209s5w-9kg/main.jpg",
+    "gallery": [
+      "/uploads/products/front-loader-fb1209s5w-9kg/gallery-1.jpg",
+      "/uploads/products/front-loader-fb1209s5w-9kg/gallery-2.jpg",
+      "/uploads/products/front-loader-fb1209s5w-9kg/gallery-3.jpg",
+      "/uploads/products/front-loader-fb1209s5w-9kg/gallery-4.jpg"
+    ],
+    "features": [
+      "6 Motion DD tailors washing actions per fabric",
+      "Steam reduces dust mites and common allergens",
+      "Inverter Direct Drive motor with 10-year warranty",
+      "Removable top cover for built-in installation",
+      "ThinQ Wi-Fi with remote start and diagnosis",
+      "Stainless steel embossed drum is gentle on fabrics",
+      "1200 RPM spin for shorter drying times",
+      "Tub Clean keeps the drum hygienic"
+    ],
+    "specs": [
+      {
+        "label": "Wash Capacity",
+        "value": "9.0 kg"
+      },
+      {
+        "label": "Dimensions (W×H×D)",
+        "value": "600 × 850 × 550 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "55.0 kg"
+      },
+      {
+        "label": "Motor",
+        "value": "Inverter Direct Drive"
+      },
+      {
+        "label": "Drum",
+        "value": "Stainless Steel with Embossing"
+      },
+      {
+        "label": "Colour",
+        "value": "Essence White (Glossy)"
+      },
+      {
+        "label": "Max Spin Speed",
+        "value": "1200 RPM"
+      },
+      {
+        "label": "Water Inlet",
+        "value": "Cold only"
+      },
+      {
+        "label": "Display",
+        "value": "Dial + Hard Buttons & LED"
+      },
+      {
+        "label": "Delay Timer",
+        "value": "3 — 19 hours"
+      },
+      {
+        "label": "Door",
+        "value": "Black Tinted Tempered Glass"
+      },
+      {
+        "label": "Smart",
+        "value": "ThinQ Wi-Fi"
+      }
+    ],
+    "heroDescription": "A 9kg front load washer built around LG's Inverter Direct Drive motor and 6 Motion DD technology for fabric-specific care. A removable top cover and slim 600 mm width allow seamless built-in installation in modern kitchens and laundries.",
+    "sections": [
+      {
+        "heading": "6 Motion Direct Drive",
+        "body": "The Inverter Direct Drive motor performs six distinct drum motions, from stepping to scrubbing. Each cycle matches the motion mix to the fabric type — thorough cleaning while protecting delicate clothes.",
+        "image": "/uploads/products/front-loader-fb1209s5w-9kg/gallery-2.jpg"
+      },
+      {
+        "heading": "Steam Allergy Care",
+        "body": "Steam penetrates fabric to remove dust mites, pet dander and bacteria common in Malaysian homes. The Allergy Care cycle is certified by the British Allergy Foundation for sensitive families.",
+        "image": "/uploads/products/front-loader-fb1209s5w-9kg/gallery-3.jpg"
+      },
+      {
+        "heading": "Built-in Ready Design",
+        "body": "A removable top cover and 600 mm-wide cabinet let the washer slide neatly under counters or into laundry cabinetry. The glossy Essence White finish keeps the look clean and minimal.",
+        "image": "/uploads/products/front-loader-fb1209s5w-9kg/gallery-4.jpg"
+      }
+    ],
+    "whatsInBox": [
+      "Washing machine unit",
+      "Inlet hose",
+      "Drain hose",
+      "User manual",
+      "Warranty card"
+    ],
+    "warranty": "10-year warranty on Inverter Direct Drive motor.",
+    "faqs": [
+      {
+        "q": "Can the removable top cover be reinstalled?",
+        "a": "Yes — the top cover detaches for built-in installation and can be reattached at any time for freestanding use."
+      },
+      {
+        "q": "Does this washer need a hot water connection?",
+        "a": "No — it connects to cold water only and heats internally as needed for warm or hot wash programmes."
+      },
+      {
+        "q": "Is Steam available in every cycle?",
+        "a": "Steam is included in selected cycles such as Allergy Care and Tub Clean, where it adds the most hygiene benefit."
+      }
+    ],
+    "status": "online"
   }
 ]

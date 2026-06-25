@@ -1,33 +1,5 @@
 [
   {
-    "slug": "televisions",
-    "name": "Televisions",
-    "short": "OLED, QNED & NanoCell",
-    "description": "Premium LG 2025 TVs — self-lit OLED, MiniLED-backed QNED evo, and NanoCell 4K AI TVs with Alpha AI processing.",
-    "hero": "/uploads/site/cat-televisions-1.avif"
-  },
-  {
-    "slug": "washer-dryers",
-    "name": "Washer & Dryers",
-    "short": "WashTower All-in-One",
-    "description": "LG WashTower all-in-one stacked washer-dryers with AI Direct Drive, TurboWash 360 and heat-pump drying.",
-    "hero": "/uploads/site/cat-washer-dryers-2.jpg"
-  },
-  {
-    "slug": "refrigerators",
-    "name": "Refrigerators",
-    "short": "InstaView French Door",
-    "description": "LG InstaView French door refrigerators with LinearCooling, DoorCooling+ and Smart Inverter compressors.",
-    "hero": "/uploads/site/cat-refrigerators-3.avif"
-  },
-  {
-    "slug": "dishwashers",
-    "name": "Dishwashers",
-    "short": "QuadWash TrueSteam",
-    "description": "Freestanding LG dishwashers with TrueSteam hygienic cleaning, QuadWash multi-direction spray arms and 14 place settings.",
-    "hero": "/uploads/site/cat-dishwashers-4.avif"
-  },
-  {
     "slug": "water-purifiers",
     "name": "Water Purifiers",
     "short": "PuriCare Tankless",
@@ -47,6 +19,34 @@
     "short": "DUAL Inverter",
     "description": "LG DUAL Inverter split air conditioners from 1.0HP to 2.5HP, including the mirrored-glass ARTCOOL range. Fast cooling, low noise, Plasmaster ionisation and 10-year compressor warranty.",
     "hero": "/uploads/site/cat-air-conditioners-7.avif"
+  },
+  {
+    "slug": "washer-dryers",
+    "name": "Washer & Dryers",
+    "short": "WashTower All-in-One",
+    "description": "LG WashTower all-in-one stacked washer-dryers with AI Direct Drive, TurboWash 360 and heat-pump drying.",
+    "hero": "/uploads/site/cat-washer-dryers-2.jpg"
+  },
+  {
+    "slug": "refrigerators",
+    "name": "Refrigerators",
+    "short": "InstaView French Door",
+    "description": "LG InstaView French door refrigerators with LinearCooling, DoorCooling+ and Smart Inverter compressors.",
+    "hero": "/uploads/site/cat-refrigerators-3.avif"
+  },
+  {
+    "slug": "televisions",
+    "name": "Televisions",
+    "short": "OLED, QNED & NanoCell",
+    "description": "Premium LG 2025 TVs — self-lit OLED, MiniLED-backed QNED evo, and NanoCell 4K AI TVs with Alpha AI processing.",
+    "hero": "/uploads/site/cat-televisions-1.avif"
+  },
+  {
+    "slug": "dishwashers",
+    "name": "Dishwashers",
+    "short": "QuadWash TrueSteam",
+    "description": "Freestanding LG dishwashers with TrueSteam hygienic cleaning, QuadWash multi-direction spray arms and 14 place settings.",
+    "hero": "/uploads/site/cat-dishwashers-4.avif"
   },
   {
     "slug": "dehumidifiers",
@@ -89,6 +89,14 @@
     "short": "XBOOM",
     "description": "LG XBOOM portable speakers tuned by will.i.am — rugged, AI audio-tuned, and built for outdoor use.",
     "hero": "/uploads/site/cat-audio-13.avif"
+  },
+  {
+    "slug": "soundbars",
+    "name": "Soundbars",
+    "short": "Dolby Atmos",
+    "description": "LG premium soundbars with Dolby Atmos, DTS:X and WOWCAST wireless lossless audio — engineered to pair seamlessly with LG OLED TVs for cinematic surround sound at home.",
+    "hero": "/uploads/site/cat-soundbars-15.jpg",
+    "isNew": true
   },
   {
     "slug": "massage-chairs",

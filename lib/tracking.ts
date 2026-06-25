@@ -1,7 +1,8 @@
 export const DEFAULT_GTM_ID = "GTM-K7G8ZKWJ";
-export const DEFAULT_GA4_ID = "G-0Y7P3Y7VMW";
+export const DEFAULT_GA4_ID = "G-KJDZCLBFYG";
 export const GOOGLE_ADS_ID = "AW-11230310270";
 export const LG_SUBSCRIBE_WHATSAPP_EVENT = "whatsapp_lgsubscribe_click";
+export const TRACKING_ALLOWED_HOSTS = ["lgsubscribe.co", "www.lgsubscribe.co"];
 
 declare global {
   interface Window {
@@ -38,6 +39,10 @@ export function getGtmId(env: TrackingEnv = process.env): string {
 export function getGa4Id(env: TrackingEnv = process.env): string {
   const configuredId = env.NEXT_PUBLIC_GA4_ID?.trim();
   return configuredId || DEFAULT_GA4_ID;
+}
+
+export function isTrackingAllowedHost(hostname: string): boolean {
+  return TRACKING_ALLOWED_HOSTS.includes(hostname.toLowerCase());
 }
 
 export function fireWhatsAppConversion(): void {
@@ -131,6 +136,83 @@ export function logWhatsAppClick(payload: WhatsAppLogPayload): void {
   } catch {
     // best-effort only
   }
+}
+
+type CategoryClickInput = {
+  categoryName: string;
+  categorySlug: string;
+  sourcePage: string;
+  ctaLocation: string;
+};
+
+export function fireCategoryClick(input: CategoryClickInput): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "category_click", {
+    category_name: input.categoryName,
+    category_slug: input.categorySlug,
+    source_page: input.sourcePage,
+    cta_location: input.ctaLocation,
+  });
+}
+
+type ProductCardClickInput = {
+  productName: string;
+  modelNumber: string;
+  categorySlug: string;
+  pagePath: string;
+  ctaLocation: string;
+  subscriptionPrice?: number | null;
+};
+
+export function fireProductCardClick(input: ProductCardClickInput): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "product_card_click", {
+    product_name: input.productName,
+    model_number: input.modelNumber,
+    category_slug: input.categorySlug,
+    page_path: input.pagePath,
+    cta_location: input.ctaLocation,
+    subscription_price: input.subscriptionPrice ?? undefined,
+  });
+}
+
+type ProductDetailViewInput = {
+  productName: string;
+  modelNumber: string;
+  categorySlug: string;
+  pagePath: string;
+  subscriptionPrice?: number | null;
+};
+
+export function fireProductDetailView(input: ProductDetailViewInput): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "product_detail_view", {
+    product_name: input.productName,
+    model_number: input.modelNumber,
+    category_slug: input.categorySlug,
+    page_path: input.pagePath,
+    subscription_price: input.subscriptionPrice ?? undefined,
+  });
+}
+
+type LeadFormSubmitInput = {
+  itemCount: number;
+  monthlyValue: number;
+  outrightValue: number;
+  categories: string[];
+  sourcePage: string;
+};
+
+export function fireLeadFormSubmit(input: LeadFormSubmitInput): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "lead_form_submit", {
+    item_count: input.itemCount,
+    value_monthly: input.monthlyValue,
+    value_outright: input.outrightValue,
+    currency: "MYR",
+    categories: input.categories.join(","),
+    source_page: input.sourcePage,
+  });
 }
 
 export function buildGenerateLeadEvent({

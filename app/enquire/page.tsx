@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { categories, products, type Product } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import { pushEvent } from "@/lib/analytics";
-import { buildGenerateLeadEvent, fireWhatsAppConversion, logWhatsAppClick } from "@/lib/tracking";
+import { buildGenerateLeadEvent, fireLeadFormSubmit, fireWhatsAppConversion, logWhatsAppClick } from "@/lib/tracking";
 
 type CartItem = {
   id: string;
@@ -265,6 +265,13 @@ function SubscribeForm() {
       hasLocation: Boolean(form.location),
     }));
     fireWhatsAppConversion();
+    fireLeadFormSubmit({
+      itemCount: cart.length,
+      monthlyValue,
+      outrightValue,
+      categories: Array.from(new Set(cart.map((c) => c.productCategory))),
+      sourcePage: "enquire",
+    });
     let prefilled = "";
     try {
       prefilled = new URL(whatsappHref).searchParams.get("text") ?? "";
