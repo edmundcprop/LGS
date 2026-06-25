@@ -47,11 +47,11 @@ export default function HomePage() {
       <section className="relative">
         <div className="relative h-[calc(100vh-56px)] min-h-[640px] overflow-hidden bg-lg-ink">
           <img
-            src="/uploads/site/scenario-upgrade-15.avif"
-            alt="LG OLED TV in a modern Malaysian living room — LG Subscribe from RM60 a month"
-            className="absolute inset-0 h-full w-full object-cover"
+            src="/uploads/site/hero-water-purifier.jpg"
+            alt="LG PuriCare tankless water purifier — clean water on tap with LG Subscribe"
+            className="absolute inset-0 h-full w-full object-cover object-right"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-lg-ink via-lg-ink/40 to-lg-ink/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-lg-ink via-lg-ink/70 to-lg-ink/10" />
           <div className="container-xl relative flex h-full flex-col justify-end pb-20 sm:pb-24 lg:pb-28">
             <div className="max-w-3xl text-white">
               <div className="eyebrow text-lg-red-light">

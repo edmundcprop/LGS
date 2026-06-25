@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: site.description,
     images: [
       {
-        url: "/uploads/site/scenario-upgrade-15.avif",
+        url: "/uploads/site/hero-water-purifier.jpg",
         width: 1600,
         height: 1062,
         alt: "LG Subscribe Malaysia — premium home appliances",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: `${site.name} — LG Appliances from RM45/month, no upfront cost`,
     description: site.description,
     images: [
-      "/uploads/site/scenario-upgrade-15.avif",
+      "/uploads/site/hero-water-purifier.jpg",
     ],
   },
   robots: {
