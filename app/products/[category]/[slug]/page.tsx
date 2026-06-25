@@ -587,12 +587,17 @@ export default async function ProductPage({
                   href={`/products/${p.category}/${p.slug}`}
                   className="product-card group"
                 >
-                  <div className="aspect-[4/3] overflow-hidden bg-lg-cloud">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-lg-cloud">
                     <img
                       src={p.image}
                       alt={p.name}
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
                     />
+                    {p.isNew && (
+                      <span className="absolute left-4 top-4 z-10 rounded-full bg-lg-red px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white">
+                        New
+                      </span>
+                    )}
                   </div>
                   <div className="bg-white px-6 py-8">
                     {p.model && (

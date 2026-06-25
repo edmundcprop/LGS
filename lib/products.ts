@@ -48,6 +48,8 @@ export type Product = {
   sections?: Section[];
   /** Product visibility: online = live, draft = hidden, offline = hidden */
   status?: ProductStatus;
+  /** Show a red "New" badge on product cards */
+  isNew?: boolean;
 };
 
 import categoriesData from "../data/categories.json";

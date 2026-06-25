@@ -5466,7 +5466,14 @@
       {
         "monthly": 80,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "An entry-level 1.0HP LG split air conditioner on the LG Subscribe plan. Built around the DUAL Inverter Compressor for fast, efficient and quiet cooling of small bedrooms, with Plasmaster Ionizer+ for cleaner indoor air and LG ThinQ smart control.",
@@ -5543,7 +5550,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "dual-inverter-1-5hp-s3q12",
@@ -5597,7 +5605,14 @@
       {
         "monthly": 90,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 110,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "A popular 1.5HP LG split for medium-sized rooms on the LG Subscribe plan. Combines the DUAL Inverter Compressor, Plasmaster ionisation and LG ThinQ smart control in one package — with annual servicing included for the full 5-year term.",
@@ -5674,7 +5689,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "dual-inverter-2hp-s3q18",
@@ -5728,7 +5744,14 @@
       {
         "monthly": 110,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 130,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "A 2.0HP LG split air conditioner sized for larger bedrooms and compact living areas, offered on a 5-year LG Subscribe plan. Pairs the DUAL Inverter Compressor with Plasmaster ionisation and LG ThinQ smart control — with annual servicing bundled in.",
@@ -5805,7 +5828,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "dual-inverter-2-5hp-s3q24",
@@ -5859,7 +5883,14 @@
       {
         "monthly": 120,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 140,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "LG's 2.5HP DUAL Inverter split for bigger rooms, offered on a 5-year LG Subscribe plan with annual servicing. Combines fast cooling, low noise, Plasmaster ionisation and LG ThinQ smart control.",
@@ -5936,7 +5967,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "artcool-1-5hp-s3q12r",
