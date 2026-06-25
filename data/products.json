@@ -902,7 +902,8 @@
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5 Years Combined Maintenance"
+        "planName": "5 Years Combine Maintenance",
+        "note": "Self-service every 6 months and regular visit every 12 months"
       },
       {
         "monthly": 110,
@@ -4385,6 +4386,16 @@
         "monthly": 80,
         "termMonths": 60,
         "planName": "5 Years Regular Visit"
+      },
+      {
+        "monthly": 100,
+        "termMonths": 36,
+        "planName": "3 Years Self-Service"
+      },
+      {
+        "monthly": 120,
+        "termMonths": 36,
+        "planName": "3 Years Regular Visit"
       }
     ],
     "heroDescription": "LG's 39-litre NeoChef microwave brings Smart Inverter technology to a roomy countertop footprint. Everyday reheating, defrosting and cooking stay even from edge to centre, and the touch panel, auto-cook presets and EasyClean interior keep day-to-day use simple.",
@@ -4460,7 +4471,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "lg-styler-s3wf",
@@ -6859,14 +6871,23 @@
       {
         "monthly": 135,
         "termMonths": 60,
-        "planName": "5 Years Self-Service"
+        "planName": "5 Years Self-Service",
+        "note": "Self-service once every 36 months (every 3 years)"
       },
       {
         "monthly": 140,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 36 months (once every 3 years)"
+      },
+      {
+        "monthly": 145,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 12 months (once a year)"
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "slug": "top-freezer-603l-grtf622",
@@ -7132,129 +7153,6 @@
         "planName": "5 Years Self-Service"
       }
     ]
-  },
-  {
-    "slug": "cordzero-a9t-rmax",
-    "category": "vacuums",
-    "name": "LG CordZero A9Komp with All-in-One Tower (Calming Beige)",
-    "model": "A9T-RMAX",
-    "tagline": "Premium cordless stick vacuum with All-in-One Tower auto-empty, UVC LED sanitisation and Kompressor dust compression.",
-    "price": null,
-    "term": null,
-    "outright": null,
-    "image": "/uploads/products/cordzero-a9t-rmax/main.jpg",
-    "gallery": [
-      "/uploads/products/cordzero-a9t-rmax/gallery-1.jpg",
-      "/uploads/products/cordzero-a9t-rmax/gallery-2.jpg",
-      "/uploads/products/cordzero-a9t-rmax/gallery-3.jpg",
-      "/uploads/products/cordzero-a9t-rmax/gallery-4.jpg"
-    ],
-    "features": [
-      "210W Smart Inverter suction power",
-      "All-in-One Tower auto-empties in 45 seconds",
-      "UVC LED sanitisation built into the tower",
-      "Kompressor compresses dust 2.4× for fewer empties",
-      "Dual swappable Li-ion batteries — up to 120 min runtime",
-      "Power Drive Mop attachment (vacuum + mop in one pass)",
-      "5-step washable filtration",
-      "Made in Korea — 10-year motor warranty"
-    ],
-    "specs": [
-      {
-        "label": "Suction Power",
-        "value": "210W"
-      },
-      {
-        "label": "Runtime (dual battery, normal)",
-        "value": "120 min"
-      },
-      {
-        "label": "Turbo Runtime",
-        "value": "~14 min"
-      },
-      {
-        "label": "Charging Time",
-        "value": "240 min"
-      },
-      {
-        "label": "Dust Bin",
-        "value": "0.44 L"
-      },
-      {
-        "label": "Weight",
-        "value": "2.6 kg"
-      },
-      {
-        "label": "Motor",
-        "value": "Smart Inverter"
-      },
-      {
-        "label": "Filtration",
-        "value": "5-step washable"
-      },
-      {
-        "label": "Tower Empty Cycle",
-        "value": "45 sec"
-      },
-      {
-        "label": "Battery",
-        "value": "2 × Li-ion swappable"
-      },
-      {
-        "label": "Origin",
-        "value": "Made in Korea"
-      },
-      {
-        "label": "Warranty",
-        "value": "10-year motor"
-      }
-    ],
-    "heroDescription": "The A9T-RMAX is LG's flagship cordless vacuum — paired with the All-in-One Tower it empties itself, charges both batteries, and sanitises the bin with UVC LED. Kompressor tech crushes dust 2.4× so you empty less often.",
-    "sections": [
-      {
-        "heading": "All-in-One Tower",
-        "body": "Dock the wand and the tower auto-empties the bin in 45 seconds, charges both batteries, and runs a UVC LED cycle to sanitise.",
-        "image": "/uploads/products/cordzero-a9t-rmax/gallery-2.jpg"
-      },
-      {
-        "heading": "Kompressor Dust Compression",
-        "body": "Built-in compressor packs dust to 2.4× density. Empty the tower bag once every few weeks instead of after every clean.",
-        "image": "/uploads/products/cordzero-a9t-rmax/gallery-3.jpg"
-      },
-      {
-        "heading": "Power Drive Mop",
-        "body": "Swap to the Power Drive Mop attachment to vacuum and mop hard floors in one pass — no separate machine needed.",
-        "image": "/uploads/products/cordzero-a9t-rmax/gallery-4.jpg"
-      }
-    ],
-    "whatsInBox": [
-      "A9Komp wand unit",
-      "All-in-One Tower",
-      "2 batteries",
-      "Combination tool",
-      "Crevice tool",
-      "Pet nozzle",
-      "Slim hard-floor nozzle",
-      "Power Drive Mop + 4 pads",
-      "Cleaning brush",
-      "Water measuring cup"
-    ],
-    "warranty": "2-year unit, 10-year Smart Inverter motor",
-    "faqs": [
-      {
-        "q": "How is this different from the A9X?",
-        "a": "A9T-RMAX adds the All-in-One Tower (auto-empty, UVC LED sanitise, dual battery charging) and Kompressor compression. Suction and battery system are also upgraded."
-      },
-      {
-        "q": "Can it replace my mop?",
-        "a": "Yes — the included Power Drive Mop attachment cleans hard floors in one pass."
-      },
-      {
-        "q": "How loud is the auto-empty?",
-        "a": "About 78 dB for 45 seconds — similar to a hand vacuum, then silent."
-      }
-    ],
-    "status": "online"
   },
   {
     "slug": "neochef-mh6565cpw",
