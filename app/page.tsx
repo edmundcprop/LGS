@@ -1,5 +1,8 @@
 import Link from "next/link";
 import TrackedLink from "@/components/TrackedLink";
+import HomeBundles from "@/components/HomeBundles";
+import NewArrivals from "@/components/NewArrivals";
+import HeroCta from "@/components/HeroCta";
 import { categories, products } from "@/lib/products";
 import { site, whatsappLink } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
@@ -19,6 +22,17 @@ export default function HomePage() {
   const featured = featuredSlugs
     .map((s) => products.find((p) => p.slug === s))
     .filter(Boolean) as typeof products;
+
+  // Cheapest active monthly price across the catalog — anchors the hero
+  const activePrices = products
+    .filter((p) => (p.status ?? "online") === "online" && typeof p.price === "number" && p.price! > 0)
+    .map((p) => p.price as number);
+  const fromPrice = activePrices.length > 0 ? Math.min(...activePrices) : 60;
+
+  // New arrivals — products flagged isNew, newest first
+  const newArrivals = products
+    .filter((p) => p.isNew && (p.status ?? "online") === "online")
+    .slice(0, 8);
 
   return (
     <>
@@ -45,42 +59,28 @@ export default function HomePage() {
               </div>
               <h1 className="display mt-6 text-balance">
                 <T
-                  en="Your home,"
-                  ms="Rumah anda,"
+                  en={`LG appliances from RM${fromPrice}/month.`}
+                  ms={`Peralatan LG dari RM${fromPrice}/bulan.`}
                 />
                 <br />
                 <T
-                  en="effortlessly upgraded."
-                  ms="dinaiktarafkan dengan mudah."
+                  en="No upfront cost."
+                  ms="Tanpa kos pendahuluan."
                 />
               </h1>
               <p className="lede mt-8 max-w-xl text-balance text-white/75">
                 <T
-                  en="Premium LG appliances for every room — from RM60 a month. No upfront cost. Free delivery, installation and care, included."
-                  ms="Peralatan LG premium untuk setiap bilik — dari RM60 sebulan. Tiada kos pendahuluan. Penghantaran, pemasangan dan penjagaan percuma — disertakan."
+                  en="Subscribe to LG water purifiers, airconds, TVs, fridges, washers and more — with free delivery, installation and care service included."
+                  ms="Langgan penulen air, penyaman udara, TV, peti sejuk, mesin basuh LG dan banyak lagi — dengan penghantaran, pemasangan dan penjagaan percuma."
                 />
               </p>
-              <div className="mt-10 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/products"
-                  className="inline-flex h-12 items-center rounded-full bg-white px-7 text-[15px] font-medium text-lg-ink transition hover:bg-white/90"
-                >
-                  <T en="Browse all products" ms="Lihat semua produk" />
-                </Link>
-                <a
-                  href={whatsappLink(
-                    "Hi, I'd like to know more about LG Subscribe plans."
-                  )}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-12 items-center gap-1 text-[15px] font-medium text-white transition hover:text-white/80"
-                >
-                  <T
-                    en="Chat with us on WhatsApp →"
-                    ms="Sembang di WhatsApp →"
-                  />
-                </a>
-              </div>
+              <HeroCta />
+              <p className="mt-6 text-[12px] uppercase tracking-[0.16em] text-white/55">
+                <T
+                  en="No deposit • Free delivery & installation • Care included • Malaysia-wide"
+                  ms="Tiada deposit • Penghantaran & pemasangan percuma • Penjagaan termasuk • Seluruh Malaysia"
+                />
+              </p>
             </div>
           </div>
         </div>
@@ -287,6 +287,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* NEW ARRIVALS — surfaces isNew products */}
+      {newArrivals.length > 0 && <NewArrivals items={newArrivals} />}
+
+      {/* HOME BUNDLES — 5 personas → multi-product enquiry */}
+      <HomeBundles />
 
       {/* FEATURED PRODUCTS */}
       <section className="section bg-white">

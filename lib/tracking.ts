@@ -215,6 +215,49 @@ export function fireLeadFormSubmit(input: LeadFormSubmitInput): void {
   });
 }
 
+export function fireHeroCtaClick(ctaLocation: string): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "homepage_hero_cta_click", {
+    cta_location: ctaLocation,
+    source_page: "homepage",
+  });
+}
+
+type BundleQuoteClickInput = {
+  bundleSlug: string;
+  bundleName: string;
+  categorySlugs: string[];
+};
+
+export function fireBundleQuoteClick(input: BundleQuoteClickInput): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "bundle_quote_click", {
+    bundle_slug: input.bundleSlug,
+    bundle_name: input.bundleName,
+    categories: input.categorySlugs.join(","),
+    source_page: "homepage",
+    cta_location: "homepage_bundles",
+  });
+}
+
+export function fireNewArrivalClick(productSlug: string, categorySlug: string): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "new_arrival_click", {
+    product_slug: productSlug,
+    category_slug: categorySlug,
+    source_page: "homepage",
+    cta_location: "homepage_new_arrivals",
+  });
+}
+
+export function fireFaqExpand(question: string, location: string): void {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  window.gtag("event", "faq_expand", {
+    question: question.slice(0, 120),
+    cta_location: location,
+  });
+}
+
 export function buildGenerateLeadEvent({
   monthlyValue,
   outrightValue,

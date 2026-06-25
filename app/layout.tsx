@@ -1,13 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
+import MobileStickyCta from "@/components/MobileStickyCta";
 import ConsentBanner from "@/components/ConsentBanner";
 import AnalyticsListeners from "@/components/AnalyticsListeners";
 import { site, absoluteUrl } from "@/lib/site";
-import { getGa4Id, getGtmId, GOOGLE_ADS_ID } from "@/lib/tracking";
+import {
+  getGa4Id,
+  getGtmId,
+  GOOGLE_ADS_ID,
+  TRACKING_ALLOWED_HOSTS,
+} from "@/lib/tracking";
 
 const GTM_ID = getGtmId();
 const GA4_ID = getGa4Id();
@@ -15,7 +20,7 @@ const GA4_ID = getGa4Id();
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Subscribe LG Appliances from RM60/month`,
+    default: `${site.name} — LG Appliances from RM45/month, no upfront cost`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -43,7 +48,7 @@ export const metadata: Metadata = {
     locale: site.locale,
     url: absoluteUrl("/"),
     siteName: site.name,
-    title: `${site.name} — Subscribe LG Appliances from RM60/month`,
+    title: `${site.name} — LG Appliances from RM45/month, no upfront cost`,
     description: site.description,
     images: [
       {
@@ -56,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — Subscribe LG Appliances from RM60/month`,
+    title: `${site.name} — LG Appliances from RM45/month, no upfront cost`,
     description: site.description,
     images: [
       "/uploads/site/scenario-upgrade-15.avif",
@@ -89,20 +94,30 @@ export default function RootLayout({
   return (
     <html lang="en-MY">
       <head>
-        <Script id="consent-default" strategy="beforeInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;var c='denied';try{var r=JSON.parse(localStorage.getItem('lg-consent-v1')||'null');if(r&&r.analytics_storage==='granted')c='granted';}catch(e){}gtag('consent','default',{ad_storage:c,ad_user_data:c,ad_personalization:c,analytics_storage:c,functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',c==='denied');`}
-        </Script>
-        <Script id="gtm-init" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
-        </Script>
-        <Script
-          id="ga4-loader"
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+        <script
+          id="consent-default"
+          dangerouslySetInnerHTML={{
+            __html: `window.__lgTrackingAllowed=${JSON.stringify(TRACKING_ALLOWED_HOSTS)}.indexOf(window.location.hostname)!==-1;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;if(window.__lgTrackingAllowed){var c='denied';try{var r=JSON.parse(localStorage.getItem('lg-consent-v1')||'null');if(r&&r.analytics_storage==='granted')c='granted';}catch(e){}gtag('consent','default',{ad_storage:c,ad_user_data:c,ad_personalization:c,analytics_storage:c,functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','url_passthrough',true);gtag('set','ads_data_redaction',c==='denied');}`,
+          }}
         />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`gtag('js', new Date());gtag('config', '${GA4_ID}');gtag('config', '${GOOGLE_ADS_ID}');`}
-        </Script>
+        <script
+          id="gtm-init"
+          dangerouslySetInnerHTML={{
+            __html: `if(window.__lgTrackingAllowed){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');}`,
+          }}
+        />
+        <script
+          id="ga4-loader"
+          dangerouslySetInnerHTML={{
+            __html: `if(window.__lgTrackingAllowed){var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=${GA4_ID}';document.head.appendChild(g);}`,
+          }}
+        />
+        <script
+          id="ga4-init"
+          dangerouslySetInnerHTML={{
+            __html: `if(window.__lgTrackingAllowed){gtag('js', new Date());gtag('config', '${GA4_ID}');gtag('config', '${GOOGLE_ADS_ID}');}`,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `try{var l=localStorage.getItem('lang');if(l==='ms')document.documentElement.lang='ms';}catch(e){}`,
@@ -130,6 +145,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <WhatsAppFab />
+        <MobileStickyCta />
         <ConsentBanner />
         <AnalyticsListeners />
       </body>
