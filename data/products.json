@@ -6066,7 +6066,14 @@
       {
         "monthly": 100,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 120,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "The 1.5HP LG ARTCOOL pairs a striking mirrored-glass front panel with the DUAL Inverter Compressor. It cools quickly, runs quietly and adds Plasmaster ionisation plus LG ThinQ smart control — designed to blend into your room rather than dominate it.",
@@ -6143,7 +6150,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "artcool-2-5hp-s3q24r",
@@ -6233,7 +6241,14 @@
       {
         "monthly": 130,
         "termMonths": 60,
-        "planName": "5 Years Regular Visit"
+        "planName": "5 Years Regular Visit (Discounted)",
+        "note": "Regular visits every 12 months (once a year)"
+      },
+      {
+        "monthly": 150,
+        "termMonths": 60,
+        "planName": "5 Years Regular Visit (Standard)",
+        "note": "Regular visits every 6 months (twice a year)"
       }
     ],
     "heroDescription": "The 2.5HP LG ARTCOOL brings LG's mirrored-glass aesthetic to larger rooms, paired with a powerful DUAL Inverter Compressor and Plasmaster ionisation. Offered on a 5-year LG Subscribe plan with annual servicing included.",
@@ -6310,7 +6325,8 @@
       }
     ],
     "status": "online",
-    "outright": null
+    "outright": null,
+    "isNew": true
   },
   {
     "slug": "xboom-stage-301",
